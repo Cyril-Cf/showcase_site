@@ -1,0 +1,74 @@
+body
+    margin: 0
+    padding: 0
+    font-family: $body-font
+    line-height: $line-height
+    h1,
+    h2
+        margin: 0
+        font-size: 36px
+        font-weight: 600
+        text-transform: uppercase
+        line-height: 1.5em
+        letter-spacing: 2px
+    h3
+        margin: 0
+    ul
+        list-style-type: none
+        padding-left: 0
+    a,
+    a:visited
+        text-decoration: none
+        color: inherit
+    .button
+        padding: 10px 20px
+        border: 1px $primary-color solid
+        &:hover
+            background-color: $secondary-color
+            color: $accent-color
+            transition: $transition
+    p
+        margin: 0
+        padding: 0
+        font-size: 20px
+    .divider
+        padding: 10px 0
+        border-top: 2px $primary-color solid
+        width: 10%
+        margin: auto
+    .button-selected
+        background-color: rgb(225, 225, 225)
+
+    header
+        color: white
+        .top
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 0 25px
+            position: fixed
+            width: calc(100% - 50px)
+            top: 0
+            z-index: 1000
+            background-color: rgba(0, 0, 0, 0.85)
+            @media (max-width: 768px)
+                padding: 0
+                width: 100%
+            nav
+                ul
+                    display: flex
+                    align-items: center
+                    li
+                        margin-right: 25px
+                        font-size: 12px
+                        font-weight: 400
+                        text-transform: uppercase
+                        letter-spacing: 1px
+                        a:hover
+                            color: $accent-color
+    footer
+        padding: 30px 0
+        text-align: center
+        border-top: 5px $primary-color solid
+        background-color: $background-color-footer
+        color: white
