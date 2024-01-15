@@ -12,11 +12,12 @@
       content="Contact, Freelance Rust, Lyon, Développement Rust"
     />
     <meta name="author" content="Cyril Couffe" />
-    <title>Contact</title>
+    <title>Freelance</title>
+    <link rel="icon" href="img/logo.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style_freelance.css" />
@@ -24,7 +25,7 @@
   <body>
     <header>
       <div class="top">
-        <div class="logo"></div>
+        <img src="img/logo.avif" alt="logo" />
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -38,36 +39,115 @@
     </header>
 
     <main>
-      <section id="coordonnees">
-        <h2>Coordonnées</h2>
-        <p><strong>Adresse :</strong> [Votre Adresse]</p>
-        <p><strong>Email :</strong> [Votre Email]</p>
-        <p><strong>Téléphone :</strong> [Votre Numéro de Téléphone]</p>
+      <h1>Mes compétences au service de vos besoins</h1>
+      <div class="divider"></div>
+      <section id="background">
+        <h2>Mon parcours</h2>
+        <div class="divider"></div>
+        <div class="content">
+          <img src="img/photo_couffe.avif" alt="Photo de Cyril Couffe" />
+          <div>
+            <p>
+              Ancien chercheur en sciences cognitives, je me suis reconverti il
+              y a plusieurs années pour devenir développeur web fullstack et me
+              spécialise depuis en RUST (Actix Web), PHP (Laravel), et
+              Javascript (NestJS, VueJS)
+            </p>
+          </div>
+        </div>
       </section>
-
-      <section id="formulaire">
-        <h2>Formulaire de Contact</h2>
-        <p>
-          Remplissez le formulaire ci-dessous et je vous répondrai dès que
-          possible.
-        </p>
-        <form action="traitement_form.php" method="post">
-          <label for="nom">Nom :</label>
-          <input type="text" id="nom" name="nom" required />
-
-          <label for="email">Email :</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message :</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-
-          <button type="submit">Envoyer</button>
-        </form>
+      <section id="expertise">
+        <h2>Expertises</h2>
+        <div class="divider"></div>
+      </section>
+      <section id="missions">
+        <h2>Exemples de missions</h2>
+        <div class="divider"></div>
+      </section>
+      <section id="values">
+        <h2>Mes valeurs</h2>
+        <div class="divider"></div>
+        <ul>
+          <li>
+            <img src="img/pain_au_chocolat.avif" alt="Pain au chocolat" />
+            <div class="content">
+              <h3>Curieux</h3>
+              <p>Obtention du CAP pâtissier candidat libre en 2018</p>
+            </div>
+          </li>
+          <li>
+            <img src="img/mappemonde.avif" alt="Mappemonde" />
+            <div class="content">
+              <h3>Explorateur</h3>
+              <p>Séjours longs aux Galapagos, Etats-Unis, Japon, Costa Rica</p>
+            </div>
+          </li>
+          <li>
+            <img src="img/tortue.avif" alt="tortue" />
+            <div class="content">
+              <h3>Responsable</h3>
+              <p>Réalisation de plusieurs missions de volontariat écologique</p>
+            </div>
+          </li>
+          <li>
+            <img src="img/gamers.avif" alt="gamers" />
+            <div class="content">
+              <h3>Compétiteur</h3>
+              <p>Plusieurs saisons en tournois E-sport amateurs européens</p>
+            </div>
+          </li>
+          <li>
+            <img src="img/runner.avif" alt="runner" />
+            <div class="content">
+              <h3>Energique</h3>
+              <p>Pratique régulière du running et oiseau de nuit</p>
+            </div>
+          </li>
+          <li>
+            <img src="img/american_flag.avif" alt="drapeau américain" />
+            <div class="content">
+              <h3>Impliqué</h3>
+              <p>Séjours linguistiques pour pratiquer des langues etrangères</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="skills">
+        <h2>Mes compétences</h2>
+        <div class="divider"></div>
+        <div class="container">
+          <section id="degree"></section>
+          <section id="skills"></section>
+        </div>
+      </section>
+      <section id="where">
+        <h2>Ma localisation</h2>
+        <div class="divider"></div>
+        <div class="container">
+          <img src="img/lyon.avif" alt="Lyon" />
+          <div class="content">
+            <p>
+              Je suis basé à <b>Lyon</b>. Mon périmètre géographique
+              d'intervention comprend la région AURA, ainsi que la France
+              entière selon les cas (télétravail total ou partiel, déplacements
+              ponctuels)
+            </p>
+            <br />
+            <p>
+              <b>Agile</b>, je peux aussi bien travailler en télétravail total
+              ou en présentiel les préférences de votre organisation.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="references">
+        <h2>Références</h2>
+        <div class="divider"></div>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2023 [Votre Nom] - Freelance Rust à Lyon</p>
+      <p>&copy; 2024 - Freelance et Formateur Rust/Web Lyon/France</p>
     </footer>
   </body>
 </html>

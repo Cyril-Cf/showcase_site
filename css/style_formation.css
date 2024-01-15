@@ -68,6 +68,12 @@ body header .top {
     width: 100%;
   }
 }
+body header .top img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 body header .top nav ul {
   display: flex;
   align-items: center;
@@ -92,4 +98,54 @@ body footer {
 
 body main {
   margin-top: 75px;
+  background-color: #fef8f0;
+}
+body main h1 {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 75px;
+}
+body main #cours ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body main #cours ul li .card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  text-align: left;
+  background-color: white;
+  margin: 15px;
+  padding: 1px;
+}
+body main #cours ul li .card:hover {
+  border: 1px #AC8C65 solid;
+  padding: 0;
+}
+body main #cours ul li .card .content {
+  padding: 20px;
+}
+body main #cours ul li .card .content img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main #cours ul li .card .content h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+body main #cours ul li .card .content .button {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+body main #cours ul li .card .content .button:hover {
+  background-color: #7D8E95;
+  color: #FFBB98;
 }/*# sourceMappingURL=style_formation.css.map */

@@ -68,6 +68,12 @@ body header .top {
     width: 100%;
   }
 }
+body header .top img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 body header .top nav ul {
   display: flex;
   align-items: center;
@@ -91,5 +97,128 @@ body footer {
 }
 
 body main {
+  background-color: #fef8f0;
+  text-align: center;
   margin-top: 75px;
+}
+body main h1 {
+  font-size: 25px;
+  padding-top: 75px;
+}
+body main h2 {
+  font-size: 20px;
+}
+body main .container {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  body main .container {
+    flex-direction: column;
+  }
+}
+body main .container #me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px 0;
+}
+@media (max-width: 768px) {
+  body main .container #me {
+    width: auto;
+    margin: 25px;
+  }
+}
+body main .container #me h2 {
+  width: 65%;
+}
+body main .container #me img {
+  width: 95px;
+  margin: 20px;
+}
+body main .container #form {
+  width: 40%;
+  background-color: #172a3a;
+  border-radius: 20px;
+  color: white;
+  padding: 30px 0;
+}
+@media (max-width: 768px) {
+  body main .container #form {
+    width: auto;
+    margin: 25px;
+  }
+}
+body main .container #form label {
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+body main .container #form .form-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 40px;
+}
+body main .container #form .form-group .form-item {
+  display: flex;
+  flex-direction: column;
+}
+body main .container #form .form-group .form-item:first-of-type {
+  width: 40%;
+}
+body main .container #form .form-group .form-item:last-of-type {
+  width: 55%;
+}
+body main .container #form .form-group .form-item input {
+  border: none;
+  background-color: #09bc8a;
+  border-radius: 10px;
+  height: 44px;
+  padding: 7px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+body main .container #form .form-message {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 40px;
+}
+body main .container #form .form-message textarea {
+  border: none;
+  background-color: #09bc8a;
+  border-radius: 10px;
+  height: 250px;
+  padding: 7px;
+  resize: none;
+  color: white;
+  font-weight: bold;
+}
+body main .container #form .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 40px 0 40px;
+  padding: 0;
+  border: none;
+}
+body main .container #form .button input {
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif;
+  font-weight: bolder;
+  height: 50px;
+  width: 100%;
+  border: none;
+  background-color: white;
+  color: #172a3a;
+  border-radius: 10px;
+  padding: 0;
+}
+body main .container #form .button input:hover {
+  border-radius: 10px;
 }/*# sourceMappingURL=style_contact.css.map */

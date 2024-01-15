@@ -13,10 +13,11 @@
     />
     <meta name="author" content="Cyril Couffe" />
     <title>Contact</title>
+    <link rel="icon" href="img/logo.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style_contact.css" />
@@ -24,7 +25,7 @@
   <body>
     <header>
       <div class="top">
-        <div class="logo"></div>
+        <img src="img/logo.avif" alt="logo" />
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -38,36 +39,50 @@
     </header>
 
     <main>
-      <section id="coordonnees">
-        <h2>Coordonnées</h2>
-        <p><strong>Adresse :</strong> [Votre Adresse]</p>
-        <p><strong>Email :</strong> [Votre Email]</p>
-        <p><strong>Téléphone :</strong> [Votre Numéro de Téléphone]</p>
-      </section>
-
-      <section id="formulaire">
-        <h2>Formulaire de Contact</h2>
-        <p>
-          Remplissez le formulaire ci-dessous et je vous répondrai dès que
-          possible.
-        </p>
-        <form action="traitement_form.php" method="post">
-          <label for="nom">Nom :</label>
-          <input type="text" id="nom" name="nom" required />
-
-          <label for="email">Email :</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message :</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-
-          <button type="submit">Envoyer</button>
-        </form>
-      </section>
+      <h1>Envie d'échanger ensemble ?</h1>
+      <div class="divider"></div>
+      <div class="container">
+        <section id="me">
+          <h2>N'hésitez pas à me contacter pour engager le dialogue !</h2>
+          <img src="img/cuddlyferris.svg" alt="Ferris the rust crab" />
+        </section>
+        <section id="form">
+          <h2>Formulaire de Contact</h2>
+          <form
+            name="simple-contact-form"
+            accept-charset="utf-8"
+            action="https://formspree.io/f/xvovylnw"
+            method="post"
+          >
+            <div class="form-group">
+              <div class="form-item">
+                <label for="nom">Votre Nom</label>
+                <input type="text" id="nom" name="nom" required />
+              </div>
+              <div class="form-item">
+                <label for="email">Votre Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+            <div class="form-message">
+              <label for="message">Votre Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+            <div class="button">
+              <input type="submit" value="Envoyer votre message" />
+            </div>
+          </form>
+        </section>
+      </div>
     </main>
 
     <footer>
-      <p>&copy; 2023 [Votre Nom] - Freelance Rust à Lyon</p>
+      <p>&copy; 2024 - Freelance et Formateur Rust/Web Lyon/France</p>
     </footer>
   </body>
 </html>

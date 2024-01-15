@@ -4,3 +4,92 @@
 body
     main
         margin-top: 75px
+        background-color: $background-secondary-color
+        padding-bottom: 30px
+        h1
+            font-size: 25px
+            text-align: center
+            padding-top: 75px
+        h2
+            text-align: center
+            font-size: 22px
+        #background
+            margin-top: 35px
+            .content
+                display: flex
+                align-items: center
+                margin: 15px 150px
+                @media (max-width: 768px)
+                    flex-direction: column
+                img
+                    width: 35%
+                    height: 400px
+                    object-fit: cover
+                    @media (max-width: 768px)
+                        width: 100%
+                div
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    height: 400px
+                    background-color: $secondary-color
+                    p
+                        width: 80%
+                        color: white
+        #expertise
+            margin-top: 35px
+        #missions
+            margin-top: 35px
+        #values
+            margin-top: 35px
+            ul
+                margin: 0
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-wrap: wrap
+                li
+                    background-color: white
+                    width: 300px
+                    text-align: center
+                    margin: 20px 15px
+                    h3
+                        font-size: 20px
+                    p
+                        font-size: 17px
+                    img
+                        width: 100%
+                        height: 250px
+                        object-fit: cover
+        #skills
+            margin-top: 35px
+        #where
+            margin-top: 35px
+            .container
+                display: flex
+                margin: 15px 150px
+                @media (max-width: 768px)
+                    flex-direction: column
+                img
+                    width: 40%
+                    height: 400px
+                    object-fit: cover
+                    @media (max-width: 768px)
+                        width: 100%
+                .content
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    width: 60%
+                    padding: 20px
+                    background-color: $secondary-color
+                    color: white
+                    @media (max-width: 768px)
+                        width: 100%
+                        padding: 0
+                    p
+                        @media (max-width: 768px)
+                            padding: 10px
+        #references
+            margin-top: 35px

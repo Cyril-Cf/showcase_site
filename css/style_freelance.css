@@ -68,6 +68,12 @@ body header .top {
     width: 100%;
   }
 }
+body header .top img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 body header .top nav ul {
   display: flex;
   align-items: center;
@@ -92,4 +98,134 @@ body footer {
 
 body main {
   margin-top: 75px;
+  background-color: #fef8f0;
+  padding-bottom: 30px;
+}
+body main h1 {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 75px;
+}
+body main h2 {
+  text-align: center;
+  font-size: 22px;
+}
+body main #background {
+  margin-top: 35px;
+}
+body main #background .content {
+  display: flex;
+  align-items: center;
+  margin: 15px 150px;
+}
+@media (max-width: 768px) {
+  body main #background .content {
+    flex-direction: column;
+  }
+}
+body main #background .content img {
+  width: 35%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px) {
+  body main #background .content img {
+    width: 100%;
+  }
+}
+body main #background .content div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background-color: #7D8E95;
+}
+body main #background .content div p {
+  width: 80%;
+  color: white;
+}
+body main #expertise {
+  margin-top: 35px;
+}
+body main #missions {
+  margin-top: 35px;
+}
+body main #values {
+  margin-top: 35px;
+}
+body main #values ul {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body main #values ul li {
+  background-color: white;
+  width: 300px;
+  text-align: center;
+  margin: 20px 15px;
+}
+body main #values ul li h3 {
+  font-size: 20px;
+}
+body main #values ul li p {
+  font-size: 17px;
+}
+body main #values ul li img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main #skills {
+  margin-top: 35px;
+}
+body main #where {
+  margin-top: 35px;
+}
+body main #where .container {
+  display: flex;
+  margin: 15px 150px;
+}
+@media (max-width: 768px) {
+  body main #where .container {
+    flex-direction: column;
+  }
+}
+body main #where .container img {
+  width: 40%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px) {
+  body main #where .container img {
+    width: 100%;
+  }
+}
+body main #where .container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 20px;
+  background-color: #7D8E95;
+  color: white;
+}
+@media (max-width: 768px) {
+  body main #where .container .content {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  body main #where .container .content p {
+    padding: 10px;
+  }
+}
+body main #references {
+  margin-top: 35px;
 }/*# sourceMappingURL=style_freelance.css.map */
