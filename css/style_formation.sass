@@ -10,39 +10,85 @@ body
             text-align: center
             padding-top: 75px
         #cours
-            ul
+            .container
                 display: flex
-                justify-content: center
-                align-items: center
-                flex-wrap: wrap
-                li
-                    .card
-                        display: flex
-                        flex-direction: column
-                        width: 400px
-                        text-align: left
+                justify-content: space-between
+                .menu
+                    width: 20%
+                    margin-top: 15px
+                    display: flex
+                    justify-content: center
+                    div
                         background-color: white
-                        margin: 15px
-                        padding: 1px
-                        &:hover
-                            border: 1px $primary-color solid
-                            padding: 0
-                        .content
-                            padding: 20px
-                            img
-                                width: 100%
-                                height: auto
-                                object-fit: cover
-                            h2
+                        border-top: $accent-color 1px solid
+                        border-right: $accent-color 1px solid
+                        width: 100%
+                        padding: 15px 25px
+                        h2
+                            font-size: 23px
+                            text-transform: uppercase
+                        ul
+                            li
                                 font-size: 20px
-                                text-transform: uppercase
-                                margin: 10px 0
-                            .button
-                                background-color: rgba(0, 0, 0, 0.85)
-                                color: white
-                                margin: 20px 0
-                                text-align: center
-                                text-transform: uppercase
+                                display: flex
+                                align-items: center
+                                p
+                                    margin-left: 5px
+                .items
+                    width: 80%
+                    ul
+                        margin: 0
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        flex-wrap: wrap
+                        li
+                            .card
+                                display: flex
+                                flex-direction: column
+                                width: 400px
+                                height: 650px
+                                text-align: left
+                                background-color: white
+                                margin: 15px
+                                padding: 1px
                                 &:hover
-                                    background-color: $secondary-color
-                                    color: $accent-color
+                                    border: 1px $primary-color solid
+                                    padding: 0
+                                .content
+                                    padding: 20px
+                                    display: flex
+                                    flex-direction: column
+                                    height: 100%
+                                    img
+                                        width: 100%
+                                        height: auto
+                                        object-fit: cover
+                                    h2
+                                        font-size: 20px
+                                        text-transform: uppercase
+                                        margin: 10px 0
+                                    .categories
+                                        display: flex
+                                        justify-content: left
+                                        align-items: center
+                                        margin-bottom: 5px
+                                        h3
+                                            font-size: 20px
+                                        ul
+                                            display: flex
+                                            margin-left: 5px
+                                            li
+                                                font-size: 20px
+                                                font-style: italic
+                                                color: $secondary-color
+                                    .button
+                                        background-color: rgba(0, 0, 0, 0.85)
+                                        color: white
+                                        margin: 20px 0
+                                        text-align: center
+                                        text-transform: uppercase
+                                        margin-top: auto
+                                        &:hover
+                                            background-color: $secondary-color
+                                            color: $accent-color

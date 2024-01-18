@@ -25,7 +25,9 @@
   <body>
     <header>
       <div class="top">
-        <img src="img/logo.avif" alt="logo" />
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.avif" alt="logo" /></a>
+        </div>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -53,6 +55,7 @@
             accept-charset="utf-8"
             action="https://formspree.io/f/xvovylnw"
             method="post"
+            id="contact-form"
           >
             <div class="form-group">
               <div class="form-item">
@@ -74,7 +77,7 @@
               ></textarea>
             </div>
             <div class="button">
-              <input type="submit" value="Envoyer votre message" />
+              <input type="submit" value="Envoyer votre message" id="submit" />
             </div>
           </form>
         </section>
@@ -84,5 +87,9 @@
     <footer>
       <p>&copy; 2024 - Freelance et Formateur Rust/Web Lyon/France</p>
     </footer>
+    <div class="message-container" id="messageContainer">
+      <div class="message" id="alert"></div>
+    </div>
+    <script src="js/contact_script.js"></script>
   </body>
 </html>

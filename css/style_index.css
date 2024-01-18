@@ -68,6 +68,16 @@ body header .top {
     width: 100%;
   }
 }
+body header .top .logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  body header .top .logo {
+    margin-left: 20px;
+  }
+}
 body header .top img {
   width: 40px;
   height: 40px;
@@ -388,6 +398,12 @@ body main section#about-me .presentation p {
 body main section#about-me .presentation .button {
   margin: 20px auto 0;
   width: 120px;
+  background-color: white;
+}
+body main section#about-me .presentation .button:hover {
+  background-color: #7D8E95;
+  color: #FFBB98;
+  transition: all 0.4s ease-out;
 }
 body main section#services {
   display: flex;

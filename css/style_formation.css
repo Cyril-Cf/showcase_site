@@ -68,6 +68,16 @@ body header .top {
     width: 100%;
   }
 }
+body header .top .logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  body header .top .logo {
+    margin-left: 20px;
+  }
+}
 body header .top img {
   width: 40px;
   height: 40px;
@@ -105,47 +115,103 @@ body main h1 {
   text-align: center;
   padding-top: 75px;
 }
-body main #cours ul {
+body main #cours .container {
+  display: flex;
+  justify-content: space-between;
+}
+body main #cours .container .menu {
+  width: 20%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+body main #cours .container .menu div {
+  background-color: white;
+  border-top: #FFBB98 1px solid;
+  border-right: #FFBB98 1px solid;
+  width: 100%;
+  padding: 15px 25px;
+}
+body main #cours .container .menu div h2 {
+  font-size: 23px;
+  text-transform: uppercase;
+}
+body main #cours .container .menu div ul li {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+body main #cours .container .menu div ul li p {
+  margin-left: 5px;
+}
+body main #cours .container .items {
+  width: 80%;
+}
+body main #cours .container .items ul {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-body main #cours ul li .card {
+body main #cours .container .items ul li .card {
   display: flex;
   flex-direction: column;
   width: 400px;
+  height: 650px;
   text-align: left;
   background-color: white;
   margin: 15px;
   padding: 1px;
 }
-body main #cours ul li .card:hover {
+body main #cours .container .items ul li .card:hover {
   border: 1px #AC8C65 solid;
   padding: 0;
 }
-body main #cours ul li .card .content {
+body main #cours .container .items ul li .card .content {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-body main #cours ul li .card .content img {
+body main #cours .container .items ul li .card .content img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-body main #cours ul li .card .content h2 {
+body main #cours .container .items ul li .card .content h2 {
   font-size: 20px;
   text-transform: uppercase;
   margin: 10px 0;
 }
-body main #cours ul li .card .content .button {
+body main #cours .container .items ul li .card .content .categories {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 5px;
+}
+body main #cours .container .items ul li .card .content .categories h3 {
+  font-size: 20px;
+}
+body main #cours .container .items ul li .card .content .categories ul {
+  display: flex;
+  margin-left: 5px;
+}
+body main #cours .container .items ul li .card .content .categories ul li {
+  font-size: 20px;
+  font-style: italic;
+  color: #7D8E95;
+}
+body main #cours .container .items ul li .card .content .button {
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
   margin: 20px 0;
   text-align: center;
   text-transform: uppercase;
+  margin-top: auto;
 }
-body main #cours ul li .card .content .button:hover {
+body main #cours .container .items ul li .card .content .button:hover {
   background-color: #7D8E95;
   color: #FFBB98;
 }/*# sourceMappingURL=style_formation.css.map */

@@ -68,6 +68,16 @@ body header .top {
     width: 100%;
   }
 }
+body header .top .logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  body header .top .logo {
+    margin-left: 20px;
+  }
+}
 body header .top img {
   width: 40px;
   height: 40px;
@@ -134,22 +144,79 @@ body main #background .content img {
     width: 100%;
   }
 }
-body main #background .content div {
+body main #background .content .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 400px;
   background-color: #7D8E95;
 }
-body main #background .content div p {
+body main #background .content .container p {
   width: 80%;
   color: white;
 }
-body main #expertise {
-  margin-top: 35px;
+@media (max-width: 768px) {
+  body main #background .content .container p {
+    width: 80%;
+    text-align: justify;
+  }
+}
+body main #background .content .container .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+@media (max-width: 768px) {
+  body main #background .content .container .buttons {
+    flex-direction: column;
+  }
+}
+body main #background .content .container .buttons a {
+  margin: 20px 10px 0 10px;
+  background-color: white;
+}
+@media (max-width: 768px) {
+  body main #background .content .container .buttons a {
+    width: 50%;
+    text-align: center;
+    margin: 5px;
+  }
 }
 body main #missions {
   margin-top: 35px;
+}
+body main #missions .exemples ul {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  body main #missions .exemples ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body main #missions .exemples ul li {
+  width: 250px;
+  text-align: center;
+  margin: 0 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 20px;
+}
+@media (max-width: 768px) {
+  body main #missions .exemples ul li {
+    width: 350px;
+  }
+}
+body main #missions .exemples ul li h3 {
+  margin-bottom: 20px;
 }
 body main #values {
   margin-top: 35px;
@@ -179,8 +246,37 @@ body main #values ul li img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-body main #skills {
+body main #skills-degree {
   margin-top: 35px;
+}
+body main #skills-degree .container {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  body main #skills-degree .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body main #skills-degree .container section {
+  width: 40%;
+  margin: 0 20px;
+}
+@media (max-width: 768px) {
+  body main #skills-degree .container section {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
+body main #skills-degree .container #skills, body main #skills-degree .container #degree {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+body main #skills-degree .container #skills ul, body main #skills-degree .container #degree ul {
+  list-style-type: circle;
+  padding-left: 25px;
 }
 body main #where {
   margin-top: 35px;
@@ -228,4 +324,24 @@ body main #where .container .content {
 }
 body main #references {
   margin-top: 35px;
+}
+body main #references .logos ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 25px;
+}
+body main #references .logos ul li img {
+  width: auto;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 25px;
+}
+@media (max-width: 768px) {
+  body main #references .logos ul li img {
+    margin: 25px 25px;
+  }
 }/*# sourceMappingURL=style_freelance.css.map */

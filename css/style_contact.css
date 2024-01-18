@@ -68,6 +68,16 @@ body header .top {
     width: 100%;
   }
 }
+body header .top .logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  body header .top .logo {
+    margin-left: 20px;
+  }
+}
 body header .top img {
   width: 40px;
   height: 40px;
@@ -221,4 +231,21 @@ body main .container #form .button input {
 }
 body main .container #form .button input:hover {
   border-radius: 10px;
+}
+body #messageContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #172a3a;
+  color: white;
+  height: 60px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #messageContainer .message {
+  font-size: 20px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style_contact.css.map */

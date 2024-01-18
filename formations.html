@@ -12,7 +12,7 @@
       content="Formations Rust, Cours Rust, Développement Rust, Lyon, Freelance Rust"
     />
     <meta name="author" content="Cyril Couffe" />
-    <title>Formations Rust à Lyon</title>
+    <title>Formations RUST/WEB</title>
     <link rel="icon" href="img/logo.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +25,9 @@
   <body>
     <header>
       <div class="top">
-        <img src="img/logo.avif" alt="logo" />
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.avif" alt="logo" /></a>
+        </div>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -41,98 +43,287 @@
       <section id="cours">
         <h1>Formations disponibles</h1>
         <div class="divider"></div>
-        <ul>
-          <li>
-            <div class="card">
-              <img src="img/graphs.avif" alt="" />
-              <div class="content">
-                <h2>Cours HTML/CSS</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  ratione eius magnam quaerat reprehenderit. Earum soluta
-                  voluptate mollitia consectetur omnis impedit consequuntur,
-                  dolorem veniam. Repellat dolorum id officiis odit quibusdam.
-                </p>
-                <div class="button">
-                  <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
-                </div>
-              </div>
+        <div class="container">
+          <div class="menu">
+            <div>
+              <h2>Catégories</h2>
+              <ul>
+                <li>
+                  <input type="checkbox" id="all" />
+                  <p>Toutes</p>
+                </li>
+                <li>
+                  <input type="checkbox" id="initiation" />
+                  <p>Initiation</p>
+                </li>
+                <li>
+                  <input type="checkbox" id="web" />
+                  <p>Web</p>
+                </li>
+                <li>
+                  <input type="checkbox" id="web-tools" />
+                  <p>Outils du web</p>
+                </li>
+              </ul>
             </div>
-          </li>
-          <li>
-            <div class="card">
-              <img src="img/graphs.avif" alt="" />
-              <div class="content">
-                <h2>Cours HTML/CSS</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  ratione eius magnam quaerat reprehenderit. Earum soluta
-                  voluptate mollitia consectetur omnis impedit consequuntur,
-                  dolorem veniam. Repellat dolorum id officiis odit quibusdam.
-                </p>
-                <div class="button">
-                  <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+          </div>
+          <div class="items">
+            <ul>
+              <li>
+                <div class="card">
+                  <img src="img/graphs.avif" alt="" />
+                  <div class="content">
+                    <h2>RUST - Initiation</h2>
+                    <div class="categories">
+                      <h3>Catégorie(s) :</h3>
+                      <ul>
+                        <li>Initiation</li>
+                      </ul>
+                    </div>
+                    <p>
+                      Formation introductive à la programmation en Rust, mettant
+                      l'accent sur les concepts fondamentaux du langage et
+                      fournissant une base solide pour les futurs développeurs.
+                    </p>
+                    <div class="button">
+                      <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <img src="img/graphs.avif" alt="" />
-              <div class="content">
-                <h2>Cours HTML/CSS</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  ratione eius magnam quaerat reprehenderit. Earum soluta
-                  voluptate mollitia consectetur omnis impedit consequuntur,
-                  dolorem veniam. Repellat dolorum id officiis odit quibusdam.
-                </p>
-                <div class="button">
-                  <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+              </li>
+              <li>
+                <div class="card">
+                  <img src="img/graphs.avif" alt="" />
+                  <div class="content">
+                    <h2>RUST - Développement web</h2>
+                    <div class="categories">
+                      <h3>Catégorie(s) :</h3>
+                      <ul>
+                        <li>Web</li>
+                      </ul>
+                    </div>
+                    <p>
+                      Apprentissage des principes du développement web avec
+                      Rust, explorant les frameworks et les outils qui
+                      permettent de créer des applications web robustes et
+                      performantes.
+                    </p>
+                    <div class="button">
+                      <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <img src="img/graphs.avif" alt="" />
-              <div class="content">
-                <h2>Cours HTML/CSS</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  ratione eius magnam quaerat reprehenderit. Earum soluta
-                  voluptate mollitia consectetur omnis impedit consequuntur,
-                  dolorem veniam. Repellat dolorum id officiis odit quibusdam.
-                </p>
-                <div class="button">
-                  <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+              </li>
+              <li>
+                <div class="card">
+                  <img src="img/graphs.avif" alt="" />
+                  <div class="content">
+                    <h2>PYTHON - Initiation à la programmation</h2>
+                    <div class="categories">
+                      <h3>Catégorie(s) :</h3>
+                      <ul>
+                        <li>Initiation</li>
+                      </ul>
+                    </div>
+                    <p>
+                      Apprentissage des principes de la programmation
+                      (variables, structures de contrôle, Programmation Orientée
+                      Objet, etc.), avec le langage PYTHON.
+                    </p>
+                    <div class="button">
+                      <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <img src="img/graphs.avif" alt="" />
-              <div class="content">
-                <h2>Cours HTML/CSS</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  ratione eius magnam quaerat reprehenderit. Earum soluta
-                  voluptate mollitia consectetur omnis impedit consequuntur,
-                  dolorem veniam. Repellat dolorum id officiis odit quibusdam.
-                </p>
-                <div class="button">
-                  <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+              </li>
+              <li>
+                <div class="card">
+                  <img src="img/graphs.avif" alt="" />
+                  <div class="content">
+                    <h2>Docker - Conteneurisation</h2>
+                    <div class="categories">
+                      <h3>Catégorie(s) :</h3>
+                      <ul>
+                        <li>Outils du web</li>
+                      </ul>
+                    </div>
+                    <p>
+                      Exploration approfondie de Docker, enseignant comment
+                      créer, gérer et déployer des conteneurs pour optimiser le
+                      déploiement d'applications dans des environnements divers.
+                    </p>
+                    <div class="button">
+                      <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+              </li>
+              <li>
+                <div class="card">
+                  <img src="img/graphs.avif" alt="" />
+                  <div class="content">
+                    <h2>Git - Versionner le code</h2>
+                    <div class="categories">
+                      <h3>Catégorie(s) :</h3>
+                      <ul>
+                        <li>Outils du web</li>
+                      </ul>
+                    </div>
+                    <p>
+                      Apprentissage des bases de Git, le système de contrôle de
+                      version, pour permettre une gestion efficace du code
+                      source, la collaboration et le suivi des modifications.
+                    </p>
+                    <div class="button">
+                      <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img src="img/graphs.avif" alt="" />
+                  <div class="content">
+                    <h2>HTML/CSS - web statique</h2>
+                    <div class="categories">
+                      <h3>Catégorie(s) :</h3>
+                      <ul>
+                        <li>Web</li>
+                      </ul>
+                    </div>
+                    <p>
+                      Formation axée sur la création de sites web statiques en
+                      utilisant HTML pour le contenu et CSS pour la mise en
+                      forme, offrant une compréhension approfondie des bases du
+                      développement web.
+                    </p>
+                    <div class="button">
+                      <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img src="img/graphs.avif" alt="" />
+                  <div class="content">
+                    <h2>Javascript - web statique</h2>
+                    <div class="categories">
+                      <h3>Catégorie(s) :</h3>
+                      <ul>
+                        <li>Web</li>
+                      </ul>
+                    </div>
+                    <p>
+                      Exploration des fondamentaux de JavaScript pour le
+                      développement web statique, en mettant l'accent sur la
+                      manipulation du DOM, les événements, et la création
+                      d'interactions utilisateur dynamiques.
+                    </p>
+                    <div class="button">
+                      <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img src="img/graphs.avif" alt="" />
+                  <div class="content">
+                    <h2>Javascript - Developpement fullstack</h2>
+                    <div class="categories">
+                      <h3>Catégorie(s) :</h3>
+                      <ul>
+                        <li>Web</li>
+                      </ul>
+                    </div>
+                    <p>
+                      Apprentissage approfondi du développement fullstack avec
+                      JavaScript, couvrant à la fois le frontend et le backend,
+                      et introduisant des frameworks tels que Node.js et
+                      Express.
+                    </p>
+                    <div class="button">
+                      <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img src="img/graphs.avif" alt="" />
+                  <div class="content">
+                    <h2>Javascript - Frontend</h2>
+                    <div class="categories">
+                      <h3>Catégorie(s) :</h3>
+                      <ul>
+                        <li>Web</li>
+                      </ul>
+                    </div>
+                    <p>
+                      Focus sur le développement frontend avec JavaScript,
+                      couvrant les bibliothèques populaires comme Vue.js pour
+                      créer des interfaces utilisateur interactives et
+                      réactives.
+                    </p>
+                    <div class="button">
+                      <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img src="img/graphs.avif" alt="" />
+                  <div class="content">
+                    <h2>Javascript - Backend</h2>
+                    <div class="categories">
+                      <h3>Catégorie(s) :</h3>
+                      <ul>
+                        <li>Web</li>
+                      </ul>
+                    </div>
+                    <p>
+                      Formation spécialisée dans le développement backend avec
+                      JavaScript, explorant les concepts du serveur, la gestion
+                      des bases de données et l'interaction avec le frontend.
+                    </p>
+                    <div class="button">
+                      <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img src="img/graphs.avif" alt="" />
+                  <div class="content">
+                    <h2>PHP - Backend</h2>
+                    <div class="categories">
+                      <h3>Catégorie(s) :</h3>
+                      <ul>
+                        <li>Web</li>
+                      </ul>
+                    </div>
+                    <p>
+                      Apprentissage approfondi du développement backend avec
+                      PHP, couvrant les principes fondamentaux du langage et son
+                      utilisation pour la création de serveurs web dynamiques.
+                    </p>
+                    <div class="button">
+                      <a href="contact.html">Intéressé(e) ? Contactez moi !</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
-
     <footer>
       <p>&copy; 2024 - Freelance et Formateur Rust/Web Lyon/France</p>
     </footer>
+    <script src="js/formation_script.js"></script>
   </body>
 </html>

@@ -100,3 +100,18 @@ body
                         padding: 0
                         &:hover
                             border-radius: 10px
+    #messageContainer
+        position: fixed
+        bottom: 0
+        width: 100%
+        background-color: $section-background-primary-color
+        color: white
+        height: 60px
+        opacity: 0
+        transition: opacity 1s ease-in-out
+        display: flex
+        justify-content: center
+        align-items: center
+        .message
+            font-size: 20px
+            text-transform: uppercase
