@@ -21,7 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
     arrayCheckbox.forEach((checkbox) => {
       if (checkbox.checked) {
         checkedCategories.push(
-          checkbox.parentElement.querySelector("p").textContent.trim()
+          checkbox.parentElement
+            .querySelector("p")
+            .textContent.replace(/\(\d+\)/g, "")
+            .trim()
         );
       }
     });
@@ -41,5 +44,41 @@ document.addEventListener("DOMContentLoaded", function () {
         card.parentElement.setAttribute("hidden", "");
       }
     });
+    count();
   }
+
+  function count() {
+    const hashmap = new Map();
+    itemCards.forEach((card) => {
+      if (card.parentElement.attributes.getNamedItem("hidden") == null) {
+        card.querySelectorAll(".categories li").forEach((li) => {
+          const key = li.textContent.trim();
+          if (hashmap.has(key)) {
+            hashmap.set(key, hashmap.get(key) + 1);
+          } else {
+            hashmap.set(key, 1);
+          }
+        });
+      }
+    });
+    arrayCheckbox.forEach((checkbox) => {
+      let key = checkbox.parentElement.querySelector("p").textContent;
+      if (/\(\d+\)/.test(key)) {
+        key = key.replace(/\(\d+\)/g, "");
+      }
+      if (key == "Toutes") {
+        const total = Array.from(hashmap.values()).reduce(
+          (acc, valeur) => acc + valeur,
+          0
+        );
+        checkbox.parentElement.querySelector("p").textContent =
+          key + `(${total})`;
+      }
+      if (hashmap.has(key)) {
+        checkbox.parentElement.querySelector("p").textContent =
+          key + `(${hashmap.get(key)})`;
+      }
+    });
+  }
+  count();
 });
