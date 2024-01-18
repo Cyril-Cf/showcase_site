@@ -125,6 +125,11 @@ body main #cours .container .menu {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  body main #cours .container .menu {
+    width: 30%;
+  }
+}
 body main #cours .container .menu div {
   background-color: white;
   border-top: #FFBB98 1px solid;
@@ -147,6 +152,11 @@ body main #cours .container .menu div ul li p {
 body main #cours .container .items {
   width: 80%;
 }
+@media (max-width: 768px) {
+  body main #cours .container .items {
+    width: 70%;
+  }
+}
 body main #cours .container .items ul {
   margin: 0;
   display: flex;
@@ -167,6 +177,12 @@ body main #cours .container .items ul li .card {
 body main #cours .container .items ul li .card:hover {
   border: 1px #AC8C65 solid;
   padding: 0;
+}
+@media (max-width: 768px) {
+  body main #cours .container .items ul li .card {
+    width: 350px;
+    height: 700px;
+  }
 }
 body main #cours .container .items ul li .card .content {
   padding: 20px;

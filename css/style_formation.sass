@@ -18,6 +18,8 @@ body
                     margin-top: 15px
                     display: flex
                     justify-content: center
+                    @media (max-width: 768px)
+                        width: 30%
                     div
                         background-color: white
                         border-top: $accent-color 1px solid
@@ -36,6 +38,8 @@ body
                                     margin-left: 5px
                 .items
                     width: 80%
+                    @media (max-width: 768px)
+                        width: 70%
                     ul
                         margin: 0
                         display: flex
@@ -55,6 +59,9 @@ body
                                 &:hover
                                     border: 1px $primary-color solid
                                     padding: 0
+                                @media (max-width: 768px)
+                                    width: 350px
+                                    height: 700px
                                 .content
                                     padding: 20px
                                     display: flex
