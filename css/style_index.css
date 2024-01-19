@@ -122,6 +122,11 @@ body header .bottom .title {
   padding: 50px;
   width: 40%;
 }
+@media (max-width: 768px) {
+  body header .bottom .title {
+    width: 60%;
+  }
+}
 body header .bottom .title .first-line {
   padding-top: 200px;
   display: flex;
@@ -154,6 +159,12 @@ body header .bottom .image {
   background-size: cover;
   width: 60%;
   height: 90vh;
+}
+@media (max-width: 768px) {
+  body header .bottom .image {
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.5)), url("../img/flame2.avif");
+    background-position: 50% 75%;
+  }
 }
 body main {
   margin: auto;
