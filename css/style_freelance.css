@@ -150,6 +150,11 @@ body main #background .content .container {
   height: 400px;
   background-color: #7D8E95;
 }
+@media (max-width: 768px) {
+  body main #background .content .container {
+    height: 500px;
+  }
+}
 body main #background .content .container p {
   width: 80%;
   color: white;
