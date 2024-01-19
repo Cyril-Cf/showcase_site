@@ -185,6 +185,13 @@ body main #background .content .container .buttons a {
     margin: 5px;
   }
 }
+body main #background .content .container .icons img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 25px;
+}
 body main #missions {
   margin-top: 35px;
 }
@@ -333,7 +340,7 @@ body main #references .logos ul {
   background-color: white;
   padding: 25px;
 }
-body main #references .logos ul li img {
+body main #references .logos ul li a img {
   width: auto;
   height: 70px;
   -o-object-fit: cover;
@@ -341,7 +348,7 @@ body main #references .logos ul li img {
   margin: 0 25px;
 }
 @media (max-width: 768px) {
-  body main #references .logos ul li img {
+  body main #references .logos ul li a img {
     margin: 25px 25px;
   }
 }/*# sourceMappingURL=style_freelance.css.map */
