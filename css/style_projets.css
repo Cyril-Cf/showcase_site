@@ -46,7 +46,7 @@ body .divider {
   margin: auto;
 }
 body .button-selected {
-  background-color: rgb(225, 225, 225);
+  background-color: #e1e1e1;
 }
 body header {
   color: white;
@@ -81,8 +81,7 @@ body header .top .logo a {
 body header .top img {
   width: 40px;
   height: 40px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 body header .top nav ul {
   display: flex;
@@ -102,10 +101,17 @@ body footer {
   padding: 30px 0;
   text-align: center;
   border-top: 5px #AC8C65 solid;
-  background-color: rgb(57, 57, 57);
+  background-color: #393939;
   color: white;
 }
 
 body main {
   margin-top: 75px;
-}/*# sourceMappingURL=style_projets.css.map */
+  background-color: #fef8f0;
+  padding-bottom: 30px;
+}
+body main h1 {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 75px;
+}
