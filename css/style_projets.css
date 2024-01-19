@@ -115,3 +115,65 @@ body main h1 {
   text-align: center;
   padding-top: 75px;
 }
+body main #projects ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body main #projects ul .card {
+  height: 700px;
+  width: 450px;
+  margin: 50px;
+  background-color: white;
+  transition: box-shadow 0.5s;
+}
+body main #projects ul .card:hover {
+  box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  body main #projects ul .card {
+    margin: 25px 50px;
+  }
+}
+body main #projects ul .card img {
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
+}
+body main #projects ul .card .content {
+  padding: 15px;
+}
+body main #projects ul .card .content h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+body main #projects ul .card .content p {
+  text-align: justify;
+}
+body main #projects ul .card .content .precisions {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+body main #projects ul .card .content .precisions h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #FFBB98;
+}
+body main #projects ul .card .content .precisions ul {
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+body main #projects ul .card .content .precisions ul li {
+  padding: 0 5px;
+}
+body main #projects ul .card .content .precisions ul li:not(:last-child) {
+  border-right: 2px solid #FFBB98;
+}
+body main #projects ul .card .content .precisions ul li a {
+  color: #FFBB98;
+  text-decoration: underline;
+  text-decoration-color: #FFBB98;
+}
