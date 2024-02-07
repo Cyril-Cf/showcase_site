@@ -46,7 +46,7 @@ body .divider {
   margin: auto;
 }
 body .button-selected {
-  background-color: #e1e1e1;
+  background-color: rgb(225, 225, 225);
 }
 body header {
   color: white;
@@ -61,6 +61,11 @@ body header .top {
   top: 0;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.85);
+}
+@media screen and (max-width: 767px) {
+  body header .top {
+    font-size: 14px;
+  }
 }
 @media (max-width: 768px) {
   body header .top {
@@ -81,7 +86,8 @@ body header .top .logo a {
 body header .top img {
   width: 40px;
   height: 40px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body header .top nav ul {
   display: flex;
@@ -101,7 +107,7 @@ body footer {
   padding: 30px 0;
   text-align: center;
   border-top: 5px #AC8C65 solid;
-  background-color: #393939;
+  background-color: rgb(57, 57, 57);
   color: white;
 }
 
@@ -139,7 +145,8 @@ body main #projects ul .card:hover {
 body main #projects ul .card img {
   width: 450px;
   height: 350px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body main #projects ul .card .content {
   padding: 15px;
@@ -176,4 +183,4 @@ body main #projects ul .card .content .precisions ul li a {
   color: #FFBB98;
   text-decoration: underline;
   text-decoration-color: #FFBB98;
-}
+}/*# sourceMappingURL=style_projets.css.map */

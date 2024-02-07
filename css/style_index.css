@@ -46,7 +46,7 @@ body .divider {
   margin: auto;
 }
 body .button-selected {
-  background-color: #e1e1e1;
+  background-color: rgb(225, 225, 225);
 }
 body header {
   color: white;
@@ -61,6 +61,11 @@ body header .top {
   top: 0;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.85);
+}
+@media screen and (max-width: 767px) {
+  body header .top {
+    font-size: 14px;
+  }
 }
 @media (max-width: 768px) {
   body header .top {
@@ -81,7 +86,8 @@ body header .top .logo a {
 body header .top img {
   width: 40px;
   height: 40px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body header .top nav ul {
   display: flex;
@@ -101,7 +107,7 @@ body footer {
   padding: 30px 0;
   text-align: center;
   border-top: 5px #AC8C65 solid;
-  background-color: #393939;
+  background-color: rgb(57, 57, 57);
   color: white;
 }
 
@@ -155,14 +161,14 @@ body header .bottom .title p {
 }
 body header .bottom .image {
   margin-top: 75px;
-  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.5)), url("../img/flame.avif");
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../img/flame.avif");
   background-size: cover;
   width: 60%;
   height: 90vh;
 }
 @media (max-width: 768px) {
   body header .bottom .image {
-    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.5)), url("../img/flame2.avif");
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url("../img/flame2.avif");
     background-position: 50% 75%;
   }
 }
@@ -270,7 +276,8 @@ body main section#why-rust .container .main .content h3 {
 body main section#why-rust .container .main .content img {
   width: 150px;
   height: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
 }
 @media (max-width: 768px) {
@@ -302,7 +309,7 @@ body main section#use-case ul {
 body main section#use-case ul li {
   background-position: center;
   background-size: cover;
-  width: calc(100% / 5);
+  width: 20%;
   height: 500px;
   color: white;
   display: flex;
@@ -486,4 +493,4 @@ body main section#services .services ul li h3 {
 body main section#services .services ul li a {
   color: #AC8C65;
   text-decoration: underline;
-}
+}/*# sourceMappingURL=style_index.css.map */
