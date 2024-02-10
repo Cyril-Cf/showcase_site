@@ -320,34 +320,34 @@ body main section#use-case ul li {
     width: 100%;
   }
 }
-body main section#use-case ul li.web {
+body main section#use-case ul li#web {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/work.avif");
 }
-body main section#use-case ul li.web:hover {
+body main section#use-case ul li#web:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/work.avif");
 }
-body main section#use-case ul li.ai {
+body main section#use-case ul li#ai {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hand.avif");
 }
-body main section#use-case ul li.ai:hover {
+body main section#use-case ul li#ai:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/hand.avif");
 }
-body main section#use-case ul li.video-games {
+body main section#use-case ul li#video_games {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/video-game.avif");
 }
-body main section#use-case ul li.video-games:hover {
+body main section#use-case ul li#video_games:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/video-game.avif");
 }
-body main section#use-case ul li.embedded {
+body main section#use-case ul li#embedded {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/complex.avif");
 }
-body main section#use-case ul li.embedded:hover {
+body main section#use-case ul li#embedded:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/complex.avif");
 }
-body main section#use-case ul li.system {
+body main section#use-case ul li#system {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/motherboard2.avif");
 }
-body main section#use-case ul li.system:hover {
+body main section#use-case ul li#system:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/motherboard2.avif");
 }
 body main section#use-case ul li h3 {

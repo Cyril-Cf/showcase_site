@@ -23,6 +23,8 @@
     <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.0.0/dist/js-yaml.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="../js/i18n_script.js"></script>
+    <script type="module" defer src="js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
@@ -114,19 +116,19 @@
         <h2>Cas d'usage</h2>
         <div class="divider"></div>
         <ul>
-          <li class="web" onmouseenter="changeContent(true, 'web')" onmouseleave="changeContent(false, 'web')">
+          <li id="web">
             <h3>Développement Web</h3>
           </li>
-          <li class="ai" onmouseenter="changeContent(true, 'ai')" onmouseleave="changeContent(false, 'ai')">
+          <li id="ai">
             <h3>Intelligence Artificielle</h3>
           </li>
-          <li class="video-games" onmouseenter="changeContent(true, 'video_games')" onmouseleave="changeContent(false, 'videoygames')">
+          <li id="video_games">
             <h3>Développement de Jeux Vidéo</h3>
           </li>
-          <li class="embedded" onmouseenter="changeContent(true, 'embedded')" onmouseleave="changeContent(false, 'embedded')">
+          <li id="embedded">
             <h3>Systèmes Embarqués</h3>
           </li>
-          <li class="system" onmouseenter="changeContent(true, 'system')" onmouseleave="changeContent(false, 'system')">
+          <li id="system">
             <h3>Programmation Système</h3>
           </li>
         </ul>
@@ -170,6 +172,5 @@
     <footer>
       <p>&copy; 2024 - Freelance et Formateur Rust/Web Lyon/France</p>
     </footer>
-    <script src="js/script.js"></script>
   </body>
 </html>

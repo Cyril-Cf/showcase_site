@@ -41,6 +41,13 @@
     <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.0.0/dist/js-yaml.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="../js/i18n_script.js"></script>
+    <script
+      data-attr-t
+      data-attr-t-interpolate
+      src-t="{{links.js}}"
+      defer
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -181,39 +188,19 @@
         <h2 data-t>body.main.use_case.h2</h2>
         <div class="divider"></div>
         <ul>
-          <li
-            class="web"
-            onmouseenter="changeContent(true, 'web')"
-            onmouseleave="changeContent(false, 'web')"
-          >
+          <li id="web">
             <h3 data-t>body.main.use_case.web.h3</h3>
           </li>
-          <li
-            class="ai"
-            onmouseenter="changeContent(true, 'ai')"
-            onmouseleave="changeContent(false, 'ai')"
-          >
+          <li id="ai">
             <h3 data-t>body.main.use_case.ai.h3</h3>
           </li>
-          <li
-            class="video-games"
-            onmouseenter="changeContent(true, 'video_games')"
-            onmouseleave="changeContent(false, 'videoygames')"
-          >
+          <li id="video_games">
             <h3 data-t>body.main.use_case.video_games.h3</h3>
           </li>
-          <li
-            class="embedded"
-            onmouseenter="changeContent(true, 'embedded')"
-            onmouseleave="changeContent(false, 'embedded')"
-          >
+          <li id="embedded">
             <h3 data-t>body.main.use_case.embedded.h3</h3>
           </li>
-          <li
-            class="system"
-            onmouseenter="changeContent(true, 'system')"
-            onmouseleave="changeContent(false, 'system')"
-          >
+          <li id="system">
             <h3 data-t>body.main.use_case.system.h3</h3>
           </li>
         </ul>
@@ -263,6 +250,5 @@
     <footer>
       <p data-t>body.footer.text</p>
     </footer>
-    <script data-attr-t data-attr-t-interpolate src-t="{{links.js}}"></script>
   </body>
 </html>
