@@ -6,13 +6,13 @@ async function changeLocale(value) {
   const i18next = await window.i18next;
   console.log(value);
   if (value === "en-US" && i18next.language !== value) {
-    await i18next.changeLanguage(value);
     window.location.href = "/en" + window.location.pathname;
+    // await i18next.changeLanguage(value);
   }
   console.log(i18next.language);
   if (value === "fr-FR" && i18next.language !== value) {
-    await i18next.changeLanguage(value);
     window.location.href = window.location.href.replace("/en", "");
+    // await i18next.changeLanguage(value);
   }
 }
 
@@ -40,6 +40,12 @@ async function changeSelectPanelContent(button) {
 }
 
 document.addEventListener("DOMContentLoaded", async function () {
+  const i18next = await window.i18next;
+  if (window.location.pathname.startsWith("/en")) {
+    await i18next.changeLanguage("en-US");
+  } else {
+    await i18next.changeLanguage("fr-FR");
+  }
   buttons.forEach((button) => {
     button.addEventListener("click", function () {
       changeSelectPanelContent(button);

@@ -17,32 +17,17 @@ function changeLocale(value) {
           i18next = _context.sent;
           console.log(value);
 
-          if (!(value === "en-US" && i18next.language !== value)) {
-            _context.next = 8;
-            break;
+          if (value === "en-US" && i18next.language !== value) {
+            window.location.href = "/en" + window.location.pathname; // await i18next.changeLanguage(value);
           }
 
-          _context.next = 7;
-          return regeneratorRuntime.awrap(i18next.changeLanguage(value));
-
-        case 7:
-          window.location.href = "/en" + window.location.pathname;
-
-        case 8:
           console.log(i18next.language);
 
-          if (!(value === "fr-FR" && i18next.language !== value)) {
-            _context.next = 13;
-            break;
+          if (value === "fr-FR" && i18next.language !== value) {
+            window.location.href = window.location.href.replace("/en", ""); // await i18next.changeLanguage(value);
           }
 
-          _context.next = 12;
-          return regeneratorRuntime.awrap(i18next.changeLanguage(value));
-
-        case 12:
-          window.location.href = window.location.href.replace("/en", "");
-
-        case 13:
+        case 7:
         case "end":
           return _context.stop();
       }
@@ -109,10 +94,34 @@ function changeSelectPanelContent(button) {
 }
 
 document.addEventListener("DOMContentLoaded", function _callee() {
+  var i18next;
   return regeneratorRuntime.async(function _callee$(_context4) {
     while (1) {
       switch (_context4.prev = _context4.next) {
         case 0:
+          _context4.next = 2;
+          return regeneratorRuntime.awrap(window.i18next);
+
+        case 2:
+          i18next = _context4.sent;
+
+          if (!window.location.pathname.startsWith("/en")) {
+            _context4.next = 8;
+            break;
+          }
+
+          _context4.next = 6;
+          return regeneratorRuntime.awrap(i18next.changeLanguage("en-US"));
+
+        case 6:
+          _context4.next = 10;
+          break;
+
+        case 8:
+          _context4.next = 10;
+          return regeneratorRuntime.awrap(i18next.changeLanguage("fr-FR"));
+
+        case 10:
           buttons.forEach(function (button) {
             button.addEventListener("click", function () {
               changeSelectPanelContent(button);
@@ -132,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function _callee() {
             });
           });
 
-        case 3:
+        case 13:
         case "end":
           return _context4.stop();
       }

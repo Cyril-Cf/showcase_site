@@ -24,6 +24,8 @@
     <script>
       i18next.use(i18nextHttpBackend).init({
         debug: !0,
+        fallbackLng: ["fr-FR", "en-US"],
+        lng: ["fr-FR", "en-US"],
         backend: { loadPath: "locales/{{lng}}/{{ns}}.json" },
       });
     </script>
