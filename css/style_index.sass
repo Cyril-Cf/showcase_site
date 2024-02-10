@@ -15,8 +15,11 @@ body
             .title
                 padding: 50px
                 width: 40%
-                @include media-screen($tablet-max)
-                    width: 60%
+                @include media-screen-between($extra-small-screen-min, $tablet-max)
+                    width: 100%
+                    margin-top: 0
+                    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.5)), url("../img/flame2.avif")
+                    background-position: 50% 60%
                 .first-line
                     padding-top: 200px
                     display: flex
@@ -51,9 +54,7 @@ body
                 width: 60%
                 height: 90vh
                 @include media-screen($tablet-max)
-                    margin-top: 0
-                    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.5)), url("../img/flame2.avif")
-                    background-position: 50% 75%
+                    display: none
     main
         margin: auto
         section#why-rust

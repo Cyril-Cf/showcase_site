@@ -208,9 +208,12 @@ body header .bottom .title {
   padding: 50px;
   width: 40%;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body header .bottom .title {
-    width: 60%;
+    width: 100%;
+    margin-top: 0;
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.5)), url("../img/flame2.avif");
+    background-position: 50% 60%;
   }
 }
 body header .bottom .title .first-line {
@@ -263,9 +266,7 @@ body header .bottom .image {
 }
 @media screen and (max-width: 768px) {
   body header .bottom .image {
-    margin-top: 0;
-    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.5)), url("../img/flame2.avif");
-    background-position: 50% 75%;
+    display: none;
   }
 }
 body main {
