@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function _callee() {
             });
           });
           useCases.forEach(function (useCase) {
-            useCase.addEventListener("mouseover", function () {
+            useCase.addEventListener("mouseenter", function () {
               changeContent(true, useCase.id);
             });
             useCase.addEventListener("mouseout", function () {
