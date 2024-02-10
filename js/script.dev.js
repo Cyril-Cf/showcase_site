@@ -9,6 +9,8 @@ function initI18next() {
         case 0:
           return _context.abrupt("return", new Promise(function (resolve, reject) {
             // Si i18next est déjà initialisé, renvoyer directement l'instance
+            console.log(i18nextInstance);
+
             if (i18nextInstance) {
               console.log("I18n déjà instanciée");
               resolve(i18nextInstance.t);
