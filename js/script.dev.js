@@ -15,6 +15,7 @@ i18next.use(i18nextBrowserLanguageDetector).use(i18nextHttpBackend).init({
     }
   }
 }, function (err, t) {
+  console.log(t);
   console.log(t("head.title"));
 
   function changeContent(onHover, item) {
