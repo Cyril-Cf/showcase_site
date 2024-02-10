@@ -14,12 +14,7 @@ i18next
     function (err, t) {
       // for options see
       // https://github.com/i18next/jquery-i18next#initialize-the-plugin
-      jqueryI18next.init(i18next, $);
-
-      // start localizing, details:
-      // https://github.com/i18next/jquery-i18next#usage-of-selector-function
-      $(".nav").localize();
-      $(".content").localize();
+      console.log(t("head.title"));
     }
   );
 
