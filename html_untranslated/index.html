@@ -39,9 +39,12 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/i18next@23.2.1/i18next.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.0.0/dist/js-yaml.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
-    <script src="../js/i18n_script.js"></script>
+    <script>
+      i18next.use(i18nextHttpBackend).init({
+        debug: !0,
+        backend: { loadPath: "locales/{{lng}}/{{ns}}.json" },
+      });
+    </script>
     <script
       data-attr-t
       data-attr-t-interpolate
@@ -99,6 +102,14 @@
           <h1 data-t>body.header.text.h1</h1>
           <p data-t>body.header.text.freelance_text</p>
           <p data-t>body.header.text.trainer_text</p>
+          <div id="locale-selector">
+            <button class="locale-btn" value="fr-FR">
+              <img src="path/to/french-flag.png" alt="French Flag" /> French
+            </button>
+            <button class="locale-btn" value="en-US">
+              <img src="path/to/english-flag.png" alt="English Flag" /> English
+            </button>
+          </div>
         </div>
         <div class="image"></div>
       </div>

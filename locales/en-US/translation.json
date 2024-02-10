@@ -1,5 +1,66 @@
 {
-  "head": {
-      "title": "test"
+  "index": {
+    "why_rust": {
+      "select_panel": {
+        "security": {
+          "src": "img/security.avif",
+          "alt": "lock",
+          "h3": "Memory Safety",
+          "text": "Rust elegantly eliminates common memory management errors, such as null pointers and buffer overflows. Its memory ownership and management system ensures security without sacrificing performance, thus providing protection against potential security vulnerabilities."
+        },
+        "performance": {
+          "src": "img/speed.avif",
+          "alt": "a speed meter",
+          "h3": "Exceptional Performance",
+          "text": "Rust offers exceptional performance, competing with low-level languages like C and C++. Its unique ownership model and memory management system enable achieving optimal efficiency without compromising on security, making it an ideal choice for applications requiring speed and reliability."
+        },
+        "concurrency": {
+          "src": "img/race.avif",
+          "alt": "a race between athletes",
+          "h3": "Painless Concurrency",
+          "text": "Concurrency is native in Rust thanks to its smooth execution model. Rust integrates concurrency management features facilitating the development of parallel applications without traditional hassles. This makes Rust particularly suitable for distributed systems and resource-intensive applications."
+        },
+        "abstraction": {
+          "src": "img/helpful.avif",
+          "alt": "a small robot",
+          "h3": "Abstraction Without Performance Loss",
+          "text": "Unlike some languages, Rust offers powerful abstractions while maintaining precise control over hardware. Traits and generics enable creating generic code without sacrificing efficiency, providing flexibility without compromising execution speed."
+        },
+        "ecosystem": {
+          "src": "img/group.avif",
+          "alt": "Hands",
+          "h3": "Active Ecosystem",
+          "text": "Rust benefits from a dynamic community and a growing ecosystem. Available crates (libraries) offer a wide variety of features, facilitating the development of fast and robust solutions. Documentation and community ensure a smooth development experience."
+        },
+        "use_case": {
+          "src": "img/mobile.avif",
+          "alt": "a mobile phone",
+          "h3": "Multiple Use Cases",
+          "text": "Rust stands out as a modern programming language, offering security, performance, and ease of development. Whether you're working on system projects, embedded applications, or cloud solutions, Rust is a solid choice to successfully achieve your goals."
+        }
+      }
+    },
+    "use_case": {
+      "web": {
+        "h3": "<h3>Web Development</h3>",
+        "text": "<div><p>Rust is used to develop robust web applications, thanks to its security system and exceptional performance.</p><a href=\"#\">Learn more</a></div>"
+      },
+      "ai": {
+        "h3": "<h3>Artificial Intelligence</h3>",
+        "text": "<div><p>Rust's performance makes it a promising choice for developing artificial intelligence applications.</p><a href=\"#\">Learn more</a></div>"
+      },
+      "video_games": {
+        "h3": "<h3>Video Game Development</h3>",
+        "text": "<div><p>Rust offers precise hardware control, making it a language suitable for developing high-performance video games.</p><a href=\"#\">Learn more</a></div>"
+      },
+      "embedded": {
+        "h3": "<h3>Embedded Systems</h3>",
+        "text": "<div><p>Rust is used for embedded system development, offering both the security and performance required.</p><a href=\"#\">Learn more</a></div>"
+      },
+      "system": {
+        "h3": "<h3>System Programming</h3>",
+        "text": "<div><p>Rust excels in system programming, offering a secure alternative to traditional languages. It has made its way into the Linux Kernel.</p><a href=\"#\">Learn more</a></div>"
+      }
+    }
   }
 }

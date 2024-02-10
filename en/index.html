@@ -14,41 +14,44 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="head.description">
-    <meta name="keywords" content="head.keywords">
+    <meta name="description" content="Freelance and Rust trainer in Lyon, FRANCE. Expert in Rust development for innovative projects.">
+    <meta name="keywords" content="Rust Freelance, Rust Trainer, Lyon, Rust Developer, Rust Expert">
     <meta name="author" content="Cyril Couffe">
-    <title>Freelance and trainer RUST/WEB</title>
-    <link rel="icon" href="../head.links.logo">
+    <title>Freelance and Rust/Web Trainer</title>
+    <link rel="icon" href="../img/logo.ico">
     <script src="https://cdn.jsdelivr.net/npm/i18next@23.2.1/i18next.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.0.0/dist/js-yaml.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
-    <script src="../../js/i18n_script.js"></script>
-    <script type="module" defer src="../links.js"></script>
+    <script>
+      i18next.use(i18nextHttpBackend).init({
+        debug: !0,
+        backend: { loadPath: "locales/{{lng}}/{{ns}}.json" },
+      });
+    </script>
+    <script defer src="../js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../head.links.css">
+    <link rel="stylesheet" href="../css/style_index.min.css">
   </head>
 
   <body>
     <header>
       <div class="top">
         <div class="logo">
-          <a href="index.html"><img alt="logo" src="../body.header.links.logo"></a>
+          <a href="index.html"><img alt="logo" src="../img/logo.avif"></a>
         </div>
         <nav>
           <ul>
-            <li><a href="index.html">body.header.nav.home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li>
-              <a href="training.html">body.header.nav.training</a>
+              <a href="training.html">Training</a>
             </li>
             <li>
-              <a href="freelance.html">body.header.nav.freelancing</a>
+              <a href="freelance.html">Freelance</a>
             </li>
-            <li><a href="projects.html">body.header.nav.projects</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <a href="contact.html">
-              <li class="button">body.header.nav.contact</li>
+              <li class="button">Contact</li>
             </a>
           </ul>
         </nav>
@@ -57,79 +60,87 @@
         <div class="title">
           <div class="first-line">
             <hr>
-            <p>body.header.text.first_line</p>
+            <p>Ignite Your Projects</p>
           </div>
-          <h1>body.header.text.h1</h1>
-          <p>body.header.text.freelance_text</p>
-          <p>body.header.text.trainer_text</p>
+          <h1>Freelance and Trainer Lyon/France</h1>
+          <p><strong>Freelance</strong> in development for innovative projects and training (Rust, PHP, Javascript).</p>
+          <p><strong>Trainer</strong> in classic web fullstack technologies (HTML, CSS, Javascript, PHP, Docker, GIT) and programming in Rust.</p>
+          <div id="locale-selector">
+            <button class="locale-btn" value="fr-FR">
+              <img src="../path/to/french-flag.png" alt="French Flag"> French
+            </button>
+            <button class="locale-btn" value="en-US">
+              <img src="../path/to/english-flag.png" alt="English Flag"> English
+            </button>
+          </div>
         </div>
         <div class="image"></div>
       </div>
     </header>
     <main>
       <section id="why-rust">
-        <h2>body.main.why_rust.h2</h2>
+        <h2>Why Rust?</h2>
         <div class="divider"></div>
 
-        <p>body.main.why_rust.explanation</p>
+        <p>The Rust programming language offers an innovative approach to development. By choosing Rust, you benefit from:</p>
 
         <div class="container">
           <div class="buttons">
             <ul>
               <li id="security">
-                <img alt="code" src="../body.main.why_rust.select_panel.security.link">
-                <h3>body.main.why_rust.select_panel.security.h3</h3>
+                <img alt="code" src="../img/code.svg">
+                <h3>Memory Safety</h3>
               </li>
               <li id="performance">
-                <img alt="code" src="../body.main.why_rust.select_panel.performance.link">
-                <h3>body.main.why_rust.select_panel.performance.h3</h3>
+                <img alt="code" src="../img/battery-full.svg">
+                <h3>Exceptional Performance</h3>
               </li>
               <li id="concurrency">
-                <img alt="code" src="../body.main.why_rust.select_panel.concurrency.link">
-                <h3>body.main.why_rust.select_panel.concurrency.h3</h3>
+                <img alt="code" src="../img/vr-cardboard.svg">
+                <h3>Painless Concurrency</h3>
               </li>
               <li id="abstraction">
-                <img alt="code" src="../body.main.why_rust.select_panel.abstraction.link">
-                <h3>body.main.why_rust.select_panel.abstraction.h3</h3>
+                <img alt="code" src="../img/microscope.svg">
+                <h3>Abstraction Without Performance Loss</h3>
               </li>
               <li id="ecosystem">
-                <img alt="code" src="../body.main.why_rust.select_panel.ecosystem.link">
-                <h3>body.main.why_rust.select_panel.ecosystem.h3</h3>
+                <img alt="code" src="../img/wifi.svg">
+                <h3>Active Ecosystem</h3>
               </li>
               <li id="use_case">
-                <img alt="code" src="../body.main.why_rust.select_panel.use_case.link">
-                <h3>body.main.why_rust.select_panel.use_case.h3</h3>
+                <img alt="code" src="../img/wrench.svg">
+                <h3>Multiple Use Cases</h3>
               </li>
             </ul>
           </div>
           <div class="main">
             <div class="content">
-              <img alt="lock" src="../body.main.why_rust.select_panel.default.link">
-              <h3>body.main.why_rust.select_panel.default.h3</h3>
-              <p>body.main.why_rust.select_panel.default.text</p>
+              <img alt="lock" src="../img/security.avif">
+              <h3>Memory Safety</h3>
+              <p>Rust elegantly eliminates common memory management errors, such as null pointers and buffer overflows. Its memory ownership and management system ensures security without sacrificing performance, thus providing protection against potential security vulnerabilities.</p>
             </div>
           </div>
         </div>
       </section>
 
       <section id="use-case">
-        <h2>body.main.use_case.h2</h2>
+        <h2>Use Cases</h2>
         <div class="divider"></div>
         <ul>
           <li id="web">
-            <h3>body.main.use_case.web.h3</h3>
+            <h3>Web Development</h3>
           </li>
           <li id="ai">
-            <h3>body.main.use_case.ai.h3</h3>
+            <h3>Artificial Intelligence</h3>
           </li>
           <li id="video_games">
-            <h3>body.main.use_case.video_games.h3</h3>
+            <h3>Video Game Development</h3>
           </li>
           <li id="embedded">
-            <h3>body.main.use_case.embedded.h3</h3>
+            <h3>Embedded Systems</h3>
           </li>
           <li id="system">
-            <h3>body.main.use_case.system.h3</h3>
+            <h3>System Programming</h3>
           </li>
         </ul>
       </section>
@@ -139,11 +150,11 @@
         <div class="presentation">
           <div>
             <div>
-              <h2>body.main.about_me.presentation.h2</h2>
+              <h2>About Me</h2>
               <div class="divider"></div>
-              <p>body.main.about_me.presentation.text</p>
+              <p>I am a web development professional based in Lyon, offering freelance and training services.</p>
             </div>
-            <a href="contact.html" class="button">body.main.about_me.button.contact</a>
+            <a href="contact.html" class="button">Contact Me</a>
           </div>
         </div>
       </section>
@@ -151,17 +162,17 @@
       <section id="services">
         <div class="services">
           <div>
-            <h2>body.main.services.h2</h2>
+            <h2>Services</h2>
             <div class="divider"></div>
-            <p>body.main.services.text</p>
+            <p>As a freelance and Rust trainer, I offer the following services:</p>
             <ul>
               <li>
-                <h3>body.main.services.ul.freelance</h3>
-                <a href="freelance.html">body.main.services.ul.button.know_more</a>
+                <h3>Development for custom web projects</h3>
+                <a href="freelance.html">Learn More</a>
               </li>
               <li>
-                <h3>body.main.services.ul.trainer</h3>
-                <a href="training.html">body.main.services.ul.button.know_more</a>
+                <h3>Training for development teams and students</h3>
+                <a href="training.html">Learn More</a>
               </li>
             </ul>
           </div>
@@ -170,7 +181,7 @@
       </section>
     </main>
     <footer>
-      <p>body.footer.text</p>
+      <p>&copy; 2024 - Freelance and Rust/Web Trainer Lyon/France</p>
     </footer>
   </body>
 </html>

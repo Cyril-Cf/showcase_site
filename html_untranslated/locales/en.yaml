@@ -1,2 +1,90 @@
 head:
-  title: "Freelance and trainer RUST/WEB"
+  title: "Freelance and Rust/Web Trainer"
+  description: "Freelance and Rust trainer in Lyon, FRANCE. Expert in Rust development for innovative projects."
+  keywords: "Rust Freelance, Rust Trainer, Lyon, Rust Developer, Rust Expert"
+  links:
+    logo: "img/logo.ico"
+    css: "css/style_index.min.css"
+  locale: 'i18next.use(i18nextBrowserLanguageDetector).use(i18nextHttpBackend).init({debug:!0,fallbackLng:"en-US",lng:["fr-FR","en-US"],backend:{loadPath:"locales/{{lng}}/{{ns}}.json"}});'
+body:
+  header:
+    nav:
+      home: "Home"
+      training: "Training"
+      freelancing: "Freelance"
+      projects: "Projects"
+      contact: "Contact"
+    text:
+      first_line: "Ignite Your Projects"
+      h1: "Freelance and Trainer Lyon/France"
+      freelance_text:
+        "<strong>Freelance</strong> in development for innovative projects and
+        training (Rust, PHP, Javascript)."
+      trainer_text:
+        "<strong>Trainer</strong> in classic web fullstack technologies
+        (HTML, CSS, Javascript, PHP, Docker, GIT) and programming in Rust."
+    links:
+      logo: "img/logo.avif"
+    lang:
+      french: "French"
+      english: "English"
+  main:
+    why_rust:
+      h2: "Why Rust?"
+      explanation: "The Rust programming language offers an innovative approach
+        to development. By choosing Rust, you benefit from:"
+      select_panel:
+        default:
+          link: "img/security.avif"
+          h3: "Memory Safety"
+          text: "Rust elegantly eliminates common memory management errors, such as null pointers and buffer overflows. Its memory ownership and management system ensures security without sacrificing performance, thus providing protection against potential security vulnerabilities."
+        security:
+          link: "img/code.svg"
+          h3: "Memory Safety"
+        performance:
+          link: "img/battery-full.svg"
+          h3: "Exceptional Performance"
+        concurrency:
+          link: "img/vr-cardboard.svg"
+          h3: "Painless Concurrency"
+        abstraction:
+          link: "img/microscope.svg"
+          h3: "Abstraction Without Performance Loss"
+        ecosystem:
+          link: "img/wifi.svg"
+          h3: "Active Ecosystem"
+        use_case:
+          link: "img/wrench.svg"
+          h3: "Multiple Use Cases"
+    use_case:
+      h2: "Use Cases"
+      web:
+        h3: "Web Development"
+      ai:
+        h3: "Artificial Intelligence"
+      video_games:
+        h3: "Video Game Development"
+      embedded:
+        h3: "Embedded Systems"
+      system:
+        h3: "System Programming"
+    about_me:
+      presentation:
+        h2: "About Me"
+        text:
+          "I am a web development professional based in Lyon, offering freelance
+          and training services."
+      button:
+        contact: "Contact Me"
+    services:
+      h2: "Services"
+      text: "As a freelance and Rust trainer, I offer the following services:"
+      ul:
+        freelance: "Development for custom web projects"
+        trainer: "Training for development teams and students"
+        button:
+          know_more: "Learn More"
+  footer:
+    text: "&copy; 2024 - Freelance and Rust/Web Trainer Lyon/France"
+links:
+  js: "js/script.js"

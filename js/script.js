@@ -1,5 +1,20 @@
 const buttons = document.querySelectorAll(".buttons li");
 const useCases = document.querySelectorAll("#use-case ul li");
+const localeSelector = document.querySelectorAll("#locale-selector button");
+
+async function changeLocale(value) {
+  const i18next = await window.i18next;
+  console.log(value);
+  if (value === "en-US" && i18next.language !== value) {
+    await i18next.changeLanguage(value);
+    window.location.href = "/en" + window.location.pathname;
+  }
+  console.log(i18next.language);
+  if (value === "fr-FR" && i18next.language !== value) {
+    await i18next.changeLanguage(value);
+    window.location.href = window.location.pathname.replace("/en", "/");
+  }
+}
 
 async function changeContent(onHover, item) {
   const t = await window.i18next.t;
@@ -38,5 +53,9 @@ document.addEventListener("DOMContentLoaded", async function () {
       changeContent(false, useCase.id);
     });
   });
-  console.log("end");
+  localeSelector.forEach((button) => {
+    button.addEventListener("click", function () {
+      changeLocale(button.value);
+    });
+  });
 });
