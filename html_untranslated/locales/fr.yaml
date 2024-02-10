@@ -26,6 +26,9 @@ body:
         programmation en Rust."
     links:
       logo: "img/logo.avif"
+      flag:
+        french: "img/french_flag.avif"
+        eng: "img/us_flag.webp"
     lang:
       french: "Français"
       english: "Anglais"

@@ -83,21 +83,45 @@ body header .top .logo a {
     margin-left: 20px;
   }
 }
-body header .top img {
+body header .top .logo img {
   width: 40px;
   height: 40px;
   object-fit: cover;
+}
+body header .top nav {
+  display: flex;
+  align-items: center;
+}
+body header .top nav #locale-selector {
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header .top nav #locale-selector img {
+  width: 60px;
+  height: 35px;
+  object-fit: cover;
+  filter: grayscale(80%);
+  cursor: pointer;
+  margin: 0 5px;
+}
+body header .top nav #locale-selector img.selected {
+  filter: grayscale(0%);
 }
 body header .top nav ul {
   display: flex;
   align-items: center;
 }
 body header .top nav ul li {
-  margin-right: 25px;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-right: 25px;
+}
+body header .top nav ul li.button {
+  margin-right: 0;
 }
 body header .top nav ul li a:hover {
   color: #FFBB98;

@@ -2,7 +2,7 @@
 
 var buttons = document.querySelectorAll(".buttons li");
 var useCases = document.querySelectorAll("#use-case ul li");
-var localeSelector = document.querySelectorAll("#locale-selector button");
+var localeSelector = document.querySelectorAll("#locale-selector img");
 
 function changeLocale(value) {
   var i18next;
@@ -15,19 +15,16 @@ function changeLocale(value) {
 
         case 2:
           i18next = _context.sent;
-          console.log(value);
 
           if (value === "en-US" && i18next.language !== value) {
-            window.location.href = "/en" + window.location.pathname; // await i18next.changeLanguage(value);
+            window.location.href = "/en" + window.location.pathname;
           }
-
-          console.log(i18next.language);
 
           if (value === "fr-FR" && i18next.language !== value) {
-            window.location.href = window.location.href.replace("/en", ""); // await i18next.changeLanguage(value);
+            window.location.href = window.location.href.replace("/en", "");
           }
 
-        case 7:
+        case 5:
         case "end":
           return _context.stop();
       }
@@ -93,6 +90,16 @@ function changeSelectPanelContent(button) {
   });
 }
 
+function changeFlagOpacity(targetLangage) {
+  localeSelector.forEach(function (img) {
+    img.classList.remove("selected");
+
+    if (img.id === targetLangage) {
+      img.classList.add("selected");
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function _callee() {
   var i18next;
   return regeneratorRuntime.async(function _callee$(_context4) {
@@ -106,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function _callee() {
           i18next = _context4.sent;
 
           if (!window.location.pathname.startsWith("/en")) {
-            _context4.next = 8;
+            _context4.next = 9;
             break;
           }
 
@@ -114,14 +121,18 @@ document.addEventListener("DOMContentLoaded", function _callee() {
           return regeneratorRuntime.awrap(i18next.changeLanguage("en-US"));
 
         case 6:
-          _context4.next = 10;
+          changeFlagOpacity("en-US");
+          _context4.next = 12;
           break;
 
-        case 8:
-          _context4.next = 10;
+        case 9:
+          _context4.next = 11;
           return regeneratorRuntime.awrap(i18next.changeLanguage("fr-FR"));
 
-        case 10:
+        case 11:
+          changeFlagOpacity("fr-FR");
+
+        case 12:
           buttons.forEach(function (button) {
             button.addEventListener("click", function () {
               changeSelectPanelContent(button);
@@ -137,11 +148,11 @@ document.addEventListener("DOMContentLoaded", function _callee() {
           });
           localeSelector.forEach(function (button) {
             button.addEventListener("click", function () {
-              changeLocale(button.value);
+              changeLocale(button.id);
             });
           });
 
-        case 13:
+        case 15:
         case "end":
           return _context4.stop();
       }
