@@ -5,7 +5,7 @@ async function initI18next() {
       .use(i18nextHttpBackend)
       .init(
         {
-          fallbackLng: "fr",
+          fallbackLng: "fr-FR",
           backend: {
             loadPath: "locales/{{lng}}/{{ns}}.json",
           },
