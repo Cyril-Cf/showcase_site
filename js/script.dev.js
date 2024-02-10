@@ -7,7 +7,7 @@ function initI18next() {
         case 0:
           return _context.abrupt("return", new Promise(function (resolve, reject) {
             i18next.use(i18nextBrowserLanguageDetector).use(i18nextHttpBackend).init({
-              fallbackLng: "fr-FR",
+              fallbackLng: "fr",
               backend: {
                 loadPath: "locales/{{lng}}/{{ns}}.json"
               }
