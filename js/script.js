@@ -5,9 +5,9 @@ i18next
     {
       debug: true,
       fallbackLng: "fr",
-      localeExtension: "yaml",
       backend: {
         loadPath: "locales/{{lng}}/{{ns}}.yaml",
+        parse: window.jsyaml.load,
       },
     },
     function (err, t) {
