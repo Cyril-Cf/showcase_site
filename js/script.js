@@ -1,5 +1,13 @@
+let i18nextInstance = null;
+
 async function initI18next() {
   return new Promise((resolve, reject) => {
+    // Si i18next est déjà initialisé, renvoyer directement l'instance
+    if (i18nextInstance) {
+      resolve(i18nextInstance.t);
+      return;
+    }
+
     i18next
       .use(i18nextBrowserLanguageDetector)
       .use(i18nextHttpBackend)
@@ -15,6 +23,8 @@ async function initI18next() {
           if (err) {
             reject(err);
           } else {
+            // Conserver l'instance i18next pour les appels ultérieurs
+            i18nextInstance = { t };
             resolve(t);
           }
         }

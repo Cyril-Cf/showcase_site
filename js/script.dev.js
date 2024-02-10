@@ -1,11 +1,19 @@
 "use strict";
 
+var i18nextInstance = null;
+
 function initI18next() {
   return regeneratorRuntime.async(function initI18next$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
           return _context.abrupt("return", new Promise(function (resolve, reject) {
+            // Si i18next est déjà initialisé, renvoyer directement l'instance
+            if (i18nextInstance) {
+              resolve(i18nextInstance.t);
+              return;
+            }
+
             i18next.use(i18nextBrowserLanguageDetector).use(i18nextHttpBackend).init({
               debug: true,
               fallbackLng: "fr-FR",
@@ -16,6 +24,10 @@ function initI18next() {
               if (err) {
                 reject(err);
               } else {
+                // Conserver l'instance i18next pour les appels ultérieurs
+                i18nextInstance = {
+                  t: t
+                };
                 resolve(t);
               }
             });
