@@ -145,7 +145,7 @@ body header .top nav ul {
     flex-direction: column;
     background-color: #333;
     position: absolute;
-    top: 41px;
+    top: 61px;
     left: 0;
     width: 100%;
     transform: translateY(-100%);
