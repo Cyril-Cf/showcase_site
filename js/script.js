@@ -12,7 +12,7 @@ async function changeLocale(value) {
   console.log(i18next.language);
   if (value === "fr-FR" && i18next.language !== value) {
     await i18next.changeLanguage(value);
-    window.location.href = window.location.pathname.replace("/en", "/");
+    window.location.href = window.location.href.replace("/en", "");
   }
 }
 

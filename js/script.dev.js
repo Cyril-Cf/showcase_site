@@ -40,7 +40,7 @@ function changeLocale(value) {
           return regeneratorRuntime.awrap(i18next.changeLanguage(value));
 
         case 12:
-          window.location.href = window.location.pathname.replace("/en", "/");
+          window.location.href = window.location.href.replace("/en", "");
 
         case 13:
         case "end":
