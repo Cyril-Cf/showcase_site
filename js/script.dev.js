@@ -151,8 +151,11 @@ document.addEventListener("DOMContentLoaded", function _callee() {
               changeLocale(button.id);
             });
           });
+          document.querySelector(".burger-menu").addEventListener("click", function () {
+            document.querySelector("header .top nav ul").classList.toggle("active");
+          });
 
-        case 15:
+        case 16:
         case "end":
           return _context4.stop();
       }

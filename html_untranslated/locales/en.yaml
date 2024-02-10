@@ -25,6 +25,7 @@ body:
         (HTML, CSS, Javascript, PHP, Docker, GIT) and programming in Rust."
     links:
       logo: "img/logo.avif"
+      burger: "img/burger.svg"
       flag:
         french: "img/french_flag.avif"
         eng: "img/us_flag.webp"

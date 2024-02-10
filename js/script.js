@@ -72,4 +72,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       changeLocale(button.id);
     });
   });
+  document.querySelector(".burger-menu").addEventListener("click", () => {
+    document.querySelector("header .top nav ul").classList.toggle("active");
+  });
 });

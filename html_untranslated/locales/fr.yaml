@@ -26,6 +26,7 @@ body:
         programmation en Rust."
     links:
       logo: "img/logo.avif"
+      burger: "img/burger.svg"
       flag:
         french: "img/french_flag.avif"
         eng: "img/us_flag.webp"
