@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     });
   });
   useCases.forEach((useCase) => {
-    useCase.addEventListener("mouseenter", function () {
+    useCase.addEventListener("mouseover", function () {
       changeContent(true, useCase.id);
     });
     useCase.addEventListener("mouseout", function () {
