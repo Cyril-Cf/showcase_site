@@ -1,5 +1,23 @@
 "use strict";
 
+i18next.use(i18nextBrowserLanguageDetector).use(i18nextHttpBackend).init({
+  debug: true,
+  fallbackLng: "en",
+  // if you want to customize a different translation path,
+  // use the loadPath option:
+  backend: {
+    loadPath: "locales/{{lng}}/{{ns}}.json"
+  }
+}, function (err, t) {
+  // for options see
+  // https://github.com/i18next/jquery-i18next#initialize-the-plugin
+  jqueryI18next.init(i18next, $); // start localizing, details:
+  // https://github.com/i18next/jquery-i18next#usage-of-selector-function
+
+  $(".nav").localize();
+  $(".content").localize();
+});
+
 function changeContent(onHover, item) {
   var listItem = document.querySelector(".".concat(item));
 

@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  i18n:
+    build: "./docker/i18n"
+    volumes:
+      - ".:/tmp"
+    command: sh -c "static-i18n -o dist --file-format yaml --allow-html -l fr -i en -i fr html"

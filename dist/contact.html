@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBE6SSQV9Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TBE6SSQV9Z");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Cyril Couffe - Freelance Rust à Lyon.">
+    <meta name="keywords" content="Contact, Freelance Rust, Lyon, Développement Rust">
+    <meta name="author" content="Cyril Couffe">
+    <title>Contact</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_contact.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.avif" alt="logo"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="formations.html">Formations</a></li>
+            <li><a href="freelance.html">Freelance</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li class="button"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>Envie d'échanger ensemble ?</h1>
+      <div class="divider"></div>
+      <div class="container">
+        <section id="me">
+          <h2>N'hésitez pas à me contacter pour engager le dialogue !</h2>
+          <img src="img/cuddlyferris.svg" alt="Ferris the rust crab">
+        </section>
+        <section id="form">
+          <h2>Formulaire de Contact</h2>
+          <form name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xvovylnw" method="post" id="contact-form">
+            <div class="form-group">
+              <div class="form-item">
+                <label for="nom">Votre Nom</label>
+                <input type="text" id="nom" name="nom" required>
+              </div>
+              <div class="form-item">
+                <label for="email">Votre Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+            <div class="form-message">
+              <label for="message">Votre Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <div class="button">
+              <input type="submit" value="Envoyer votre message" id="submit">
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 - Freelance et Formateur Rust/Web Lyon/France</p>
+    </footer>
+    <div class="message-container" id="messageContainer">
+      <div class="message" id="alert"></div>
+    </div>
+    <script src="js/contact_script.prod.js"></script>
+  </body>
+</html>

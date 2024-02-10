@@ -1,0 +1,81 @@
+head:
+  title: "Freelance et Formateur RUST/WEB"
+  description: "Freelance et formateur Rust à Lyon, FRANCE. Expert en développement Rust pour des projets innovants."
+  keywords: "Freelance Rust, Formateur Rust, Lyon, Développeur Rust, Expert Rust"
+  links:
+    logo: "../img/logo.ico"
+    css: "../css/style_index.min.css"
+body:
+  header:
+    nav:
+      home: "Home"
+      training: "Formations"
+      freelancing: "Freelance"
+      projects: "Projets"
+      contact: "Contact"
+    text:
+      first_line: "Enflammez vos projets"
+      h1: "Freelance et Formateur Lyon/France"
+      freelance_text: "<strong>Freelance</strong> en développement pour des projets et
+            formations innovantes (Rust, PHP, Javascript)."
+      trainer_text: "<strong>Formateur</strong> aux technologies classiques du web
+            fullstack (HTML, CSS, Javascript, PHP, Docker, GIT) et à la
+            programmation en Rust."
+    links:
+      logo: "../img/logo.avif"
+  main:
+    why_rust:
+      h2: "Pourquoi Rust ?"
+      explanation: "Le langage de programmation Rust offre une approche novatrice du
+          développement. En choisissant Rust, vous bénéficiez de :"
+      select_panel:
+          security: 
+            link: "../img/code.svg"
+            h3: "Sécurité de la Mémoire"
+          performance: 
+            link: "../img/battery-full.svg"
+            h3: "Performances Exceptionnelles"
+          concurrency: 
+            link: "../img/vr-cardboard.svg"
+            h3: "Concurrence Sans Douleur"
+          abstraction: 
+            link: "../img/microscope.svg"
+            h3: "Abstraction Sans Perte de perfs"
+          ecosystem: 
+            link: "../img/wifi.svg"
+            h3: "Un Écosystème Actif"
+          use_case: 
+            link: "../img/wrench.svg"
+            h3: "De multiples cas d'usage"
+    use_case:
+      h2: "Cas d'usage" 
+      web:
+        h3: "Développement Web"
+      ai:
+        h3: "Intelligence Artificielle"
+      video_games:
+        h3: "Développement de Jeux Vidéo"
+      embedded:
+        h3: "Systèmes Embarqués"
+      system:
+        h3: "Programmation Système"
+    about_me:
+      presentation:
+        h2: "À Propos de Moi"
+        text: "Je suis un professionnel du développement web basé à Lyon,
+                offrant des services de freelance et de formation."
+      button:
+        contact: "Me contacter"
+    services:
+      h2: "Services"
+      text: "En tant que freelance et formateur Rust, je propose les services
+              suivants :"
+      ul:
+        freelance: "Développement pour des projets web sur mesure"
+        trainer: "Formations pour les équipes de développement et étudiants"
+        button:
+          know_more: "En savoir plus"
+  footer:
+    text: "&copy; 2024 - Freelance et Formateur Rust/Web Lyon/France"
+links:
+  js: "../js/script.js"
