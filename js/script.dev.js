@@ -4,15 +4,7 @@ i18next.use(i18nextBrowserLanguageDetector).use(i18nextHttpBackend).init({
   debug: true,
   fallbackLng: "fr",
   backend: {
-    loadPath: "locales/{{lng}}/{{ns}}.yaml",
-    parse: function parse(data) {
-      if (window.jsyaml && typeof window.jsyaml.load === "function") {
-        return window.jsyaml.load(data);
-      } else {
-        console.error("Erreur: La fonction de chargement YAML est introuvable.");
-        return {};
-      }
-    }
+    loadPath: "locales/{{lng}}/{{ns}}.json"
   }
 }, function (err, t) {
   console.log(t);

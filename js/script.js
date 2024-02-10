@@ -6,17 +6,7 @@ i18next
       debug: true,
       fallbackLng: "fr",
       backend: {
-        loadPath: "locales/{{lng}}/{{ns}}.yaml",
-        parse: function (data) {
-          if (window.jsyaml && typeof window.jsyaml.load === "function") {
-            return window.jsyaml.load(data);
-          } else {
-            console.error(
-              "Erreur: La fonction de chargement YAML est introuvable."
-            );
-            return {};
-          }
-        },
+        loadPath: "locales/{{lng}}/{{ns}}.json",
       },
     },
     function (err, t) {
