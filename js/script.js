@@ -2,9 +2,8 @@ const buttons = document.querySelectorAll(".buttons li");
 const useCases = document.querySelectorAll("#use-case ul li");
 
 async function changeContent(onHover, item) {
-  console.log("change content");
   const t = await window.i18next.t;
-  var listItem = document.querySelector(`.${item}`);
+  const listItem = document.getElementById(item);
   if (!onHover) {
     listItem.innerHTML = t(`index.use_case.${item}.h3`);
   } else {
@@ -31,17 +30,13 @@ document.addEventListener("DOMContentLoaded", async function () {
       changeSelectPanelContent(button);
     });
   });
-  console.log(useCases);
-  useCases.forEach(
-    (useCase) =>
-      function () {
-        console.log("test");
-        useCase.addEventListener("mouseover", function () {
-          changeContent(true, useCase);
-        });
-        useCase.addEventListener("mouseout", function () {
-          changeContent(false, useCase.id);
-        });
-      }
-  );
+  useCases.forEach((useCase) => {
+    useCase.addEventListener("mouseover", function () {
+      changeContent(true, useCase.id);
+    });
+    useCase.addEventListener("mouseout", function () {
+      changeContent(false, useCase.id);
+    });
+  });
+  console.log("end");
 });

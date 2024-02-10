@@ -9,13 +9,12 @@ function changeContent(onHover, item) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          console.log("change content");
-          _context.next = 3;
+          _context.next = 2;
           return regeneratorRuntime.awrap(window.i18next.t);
 
-        case 3:
+        case 2:
           t = _context.sent;
-          listItem = document.querySelector(".".concat(item));
+          listItem = document.getElementById(item);
 
           if (!onHover) {
             listItem.innerHTML = t("index.use_case.".concat(item, ".h3"));
@@ -23,7 +22,7 @@ function changeContent(onHover, item) {
             listItem.innerHTML = t("index.use_case.".concat(item, ".text"));
           }
 
-        case 6:
+        case 5:
         case "end":
           return _context.stop();
       }
@@ -72,18 +71,15 @@ document.addEventListener("DOMContentLoaded", function _callee() {
               changeSelectPanelContent(button);
             });
           });
-          console.log(useCases);
           useCases.forEach(function (useCase) {
-            return function () {
-              console.log("test");
-              useCase.addEventListener("mouseover", function () {
-                changeContent(true, useCase);
-              });
-              useCase.addEventListener("mouseout", function () {
-                changeContent(false, useCase.id);
-              });
-            };
+            useCase.addEventListener("mouseover", function () {
+              changeContent(true, useCase.id);
+            });
+            useCase.addEventListener("mouseout", function () {
+              changeContent(false, useCase.id);
+            });
           });
+          console.log("end");
 
         case 3:
         case "end":
