@@ -15,13 +15,15 @@ body
             .title
                 padding: 50px
                 width: 40%
-                @media (max-width: 768px)
+                @include media-screen($tablet-max)
                     width: 60%
                 .first-line
                     padding-top: 200px
                     display: flex
                     justify-content: left
                     align-items: center
+                    @include media-screen-between($extra-small-screen-min, $tablet-max)
+                        padding-top: 25px
                     hr
                         width: 30%
                         border-color: $primary-color
@@ -35,16 +37,21 @@ body
                         letter-spacing: 2px
                 h1
                     padding-top: 30px
+                    @include media-screen-between($extra-small-screen-min, $tablet-max)
+                        font-size: 20px
                 p
                     padding: 20px 0 0
                     font-size: 19px
+                    @include media-screen-between($extra-small-screen-min, $tablet-max)
+                        font-size: 16px
             .image
                 margin-top: 75px
                 background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.5)), url("../img/flame.avif")
                 background-size: cover
                 width: 60%
                 height: 90vh
-                @media (max-width: 768px)
+                @include media-screen($tablet-max)
+                    margin-top: 0
                     background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.5)), url("../img/flame2.avif")
                     background-position: 50% 75%
     main
@@ -53,21 +60,24 @@ body
             width: $container-width
             margin: 50px auto
             text-align: center
-            @media (max-width: 768px)
+            @include media-screen($tablet-max)
                 width: auto
+            p
+                @include media-screen-between($extra-small-screen-min, $tablet-max)
+                    font-size: 16px
             .container
                 display: flex
-                @media (max-width: 768px)
+                @include media-screen($tablet-max)
                     flex-direction: column
                 .buttons
                     width: 35%
-                    @media (max-width: 768px)
+                    @include media-screen($tablet-max)
                         width: 100%
                         margin-top: 10px
                     ul
                         display: flex
                         flex-direction: column
-                        @media (max-width: 768px)
+                        @include media-screen-between($extra-small-screen-min, $tablet-max)
                             flex-direction: row
                             justify-content: center
                             align-items: center
@@ -84,11 +94,13 @@ body
                             align-items: center
                             &:hover
                                 border: 1px $accent-color solid
-                            @media (max-width: 768px)
-                                width: 45%
+                            @include media-screen-between($extra-small-screen-min, $tablet-max)
+                                width: 40%
                                 margin: 5px 5px
                             img
                                 width: 10%
+                                @include media-screen-between($extra-small-screen-min, $tablet-max)
+                                    display: none
                             h3
                                 width: 70%
                                 padding-left: 15px
@@ -98,6 +110,9 @@ body
                                 line-height: 1.5em
                                 letter-spacing: 2px
                                 text-align: left
+                                @include media-screen-between($extra-small-screen-min, $tablet-max)
+                                    font-size: 10px
+                                    padding-left: 0
                 .main
                     padding: 25px
                     width: 65%
@@ -109,9 +124,9 @@ body
                     display: flex
                     justify-content: center
                     align-items: center
-                    @media (max-width: 768px)
-                        width: 80%
-                        height: 500px
+                    @include media-screen-between($extra-small-screen-min, $tablet-max)
+                        width: 70%
+                        height: auto
                     .content
                         h3
                             font-size: 16px
@@ -120,15 +135,18 @@ body
                             line-height: 1.5em
                             letter-spacing: 2px
                             margin: 20px 0 10px
+                            @include media-screen-between($extra-small-screen-min, $tablet-max)
+                                font-size: 14px
                         img
                             width: 150px
                             height: 150px
                             object-fit: cover
                             border-radius: 50%
                         p
-                            @media (max-width: 768px)
+                            @include media-screen-between($extra-small-screen-min, $tablet-max)
                                 text-align: justify
                                 overflow: hidden
+                                font-size: 14px
 
         section#use-case
             text-align: center
@@ -142,7 +160,7 @@ body
                 justify-content: center
                 align-items: center
                 flex-wrap: wrap
-                @media (max-width: 768px)
+                @include media-screen-between($extra-small-screen-min, $tablet-max)
                     flex-direction: column
                 li
                     background-position: center
@@ -154,8 +172,9 @@ body
                     justify-content: center
                     align-items: center
                     filter: grayscale(100%)
-                    @media (max-width: 768px)
+                    @include media-screen-between($extra-small-screen-min, $tablet-max)
                         width: 100%
+                        height: 250px
                     &#web
                         background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/work.avif")
                         &:hover
@@ -192,7 +211,7 @@ body
                             text-decoration: underline
         section#about-me
             display: flex
-            @media (max-width: 768px)
+            @include media-screen-between($extra-small-screen-min, $tablet-max)
                 flex-direction: column
             .rusty
                 background-image: url("../img/cuddlyferris.svg")
@@ -201,7 +220,7 @@ body
                 width: 50%
                 height: 300px
                 margin: 50px 0
-                @media (max-width: 768px)
+                @include media-screen-between($extra-small-screen-min, $tablet-max)
                     height: 200px
                     width: 100%
             .presentation
@@ -211,9 +230,9 @@ body
                 display: flex
                 justify-content: center
                 align-items: center
-                @media (max-width: 768px)
+                @include media-screen-between($extra-small-screen-min, $tablet-max)
                     width: 100%
-                    height: 200px
+                    height: auto
                     padding: 25px 0
                 h2
                     font-size: 25px
@@ -230,7 +249,7 @@ body
                         transition: $transition
         section#services
             display: flex
-            @media (max-width: 768px)
+            @include media-screen-between($extra-small-screen-min, $tablet-max)
                 flex-direction: column-reverse
             .photo
                 background-image: url("../img/motherboard.avif")
@@ -238,8 +257,8 @@ body
                 background-position: center
                 width: 50%
                 height: 400px
-                @media (max-width: 768px)
-                    height: 200px
+                @include media-screen-between($extra-small-screen-min, $tablet-max)
+                    height: 250px
                     width: 100%
             .services
                 text-align: center
@@ -248,20 +267,20 @@ body
                 display: flex
                 justify-content: center
                 align-items: center
-                @media (max-width: 768px)
+                @include media-screen-between($extra-small-screen-min, $tablet-max)
                     width: 100%
-                    height: 450px
+                    height: auto
                     padding: 25px 0
-                p
-                    @media (max-width: 768px)
-
                 h2
                     font-size: 25px
+                p
+                    @include media-screen-between($extra-small-screen-min, $tablet-max)
+                        padding: 0 10px
                 ul
                     margin-top: 25px
                     display: flex
                     justify-content: space-evenly
-                    @media (max-width: 768px)
+                    @include media-screen-between($extra-small-screen-min, $tablet-max)
                         flex-direction: column
                         justify-content: center
                         align-items: center
@@ -274,7 +293,7 @@ body
                         flex-direction: column
                         align-items: center
                         justify-content: center
-                        @media (max-width: 768px)
+                        @include media-screen-between($extra-small-screen-min, $tablet-max)
                             margin-bottom: 10px
                         h3
                             font-size: 18px

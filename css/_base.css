@@ -13,6 +13,12 @@ body h2 {
   line-height: 1.5em;
   letter-spacing: 2px;
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  body h1,
+body h2 {
+    font-size: 20px;
+  }
+}
 body h3 {
   margin: 0;
 }
@@ -62,14 +68,10 @@ body header .top {
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.85);
 }
-@media screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body header .top {
     font-size: 14px;
-  }
-}
-@media (max-width: 768px) {
-  body header .top {
-    padding: 0;
+    padding: 10px 0;
     width: 100%;
   }
 }
@@ -78,7 +80,7 @@ body header .top .logo a {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body header .top .logo {
     margin-left: 20px;
   }
@@ -126,6 +128,11 @@ body header .top nav #locale-selector img {
 body header .top nav #locale-selector img.selected {
   filter: grayscale(0%);
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  body header .top nav #locale-selector img:last-of-type {
+    margin-right: 15px;
+  }
+}
 body header .top nav ul {
   display: flex;
   align-items: center;
@@ -133,11 +140,12 @@ body header .top nav ul {
 }
 @media screen and (max-width: 768px) {
   body header .top nav ul {
+    margin: 0;
     display: none;
     flex-direction: column;
     background-color: #333;
     position: absolute;
-    top: 60px;
+    top: 41px;
     left: 0;
     width: 100%;
     transform: translateY(-100%);

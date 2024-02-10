@@ -13,6 +13,12 @@ body h2 {
   line-height: 1.5em;
   letter-spacing: 2px;
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  body h1,
+body h2 {
+    font-size: 20px;
+  }
+}
 body h3 {
   margin: 0;
 }
@@ -62,14 +68,10 @@ body header .top {
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.85);
 }
-@media screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body header .top {
     font-size: 14px;
-  }
-}
-@media (max-width: 768px) {
-  body header .top {
-    padding: 0;
+    padding: 10px 0;
     width: 100%;
   }
 }
@@ -78,7 +80,7 @@ body header .top .logo a {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body header .top .logo {
     margin-left: 20px;
   }
@@ -126,6 +128,11 @@ body header .top nav #locale-selector img {
 body header .top nav #locale-selector img.selected {
   filter: grayscale(0%);
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  body header .top nav #locale-selector img:last-of-type {
+    margin-right: 15px;
+  }
+}
 body header .top nav ul {
   display: flex;
   align-items: center;
@@ -133,11 +140,12 @@ body header .top nav ul {
 }
 @media screen and (max-width: 768px) {
   body header .top nav ul {
+    margin: 0;
     display: none;
     flex-direction: column;
     background-color: #333;
     position: absolute;
-    top: 60px;
+    top: 41px;
     left: 0;
     width: 100%;
     transform: translateY(-100%);
@@ -200,7 +208,7 @@ body header .bottom .title {
   padding: 50px;
   width: 40%;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body header .bottom .title {
     width: 60%;
   }
@@ -210,6 +218,11 @@ body header .bottom .title .first-line {
   display: flex;
   justify-content: left;
   align-items: center;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  body header .bottom .title .first-line {
+    padding-top: 25px;
+  }
 }
 body header .bottom .title .first-line hr {
   width: 30%;
@@ -227,9 +240,19 @@ body header .bottom .title .first-line p {
 body header .bottom .title h1 {
   padding-top: 30px;
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  body header .bottom .title h1 {
+    font-size: 20px;
+  }
+}
 body header .bottom .title p {
   padding: 20px 0 0;
   font-size: 19px;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  body header .bottom .title p {
+    font-size: 16px;
+  }
 }
 body header .bottom .image {
   margin-top: 75px;
@@ -238,8 +261,9 @@ body header .bottom .image {
   width: 60%;
   height: 90vh;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body header .bottom .image {
+    margin-top: 0;
     background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.5)), url("../img/flame2.avif");
     background-position: 50% 75%;
   }
@@ -252,15 +276,20 @@ body main section#why-rust {
   margin: 50px auto;
   text-align: center;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body main section#why-rust {
     width: auto;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  body main section#why-rust p {
+    font-size: 16px;
   }
 }
 body main section#why-rust .container {
   display: flex;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body main section#why-rust .container {
     flex-direction: column;
   }
@@ -268,7 +297,7 @@ body main section#why-rust .container {
 body main section#why-rust .container .buttons {
   width: 35%;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body main section#why-rust .container .buttons {
     width: 100%;
     margin-top: 10px;
@@ -278,7 +307,7 @@ body main section#why-rust .container .buttons ul {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body main section#why-rust .container .buttons ul {
     flex-direction: row;
     justify-content: center;
@@ -300,14 +329,19 @@ body main section#why-rust .container .buttons ul li {
 body main section#why-rust .container .buttons ul li:hover {
   border: 1px #FFBB98 solid;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body main section#why-rust .container .buttons ul li {
-    width: 45%;
+    width: 40%;
     margin: 5px 5px;
   }
 }
 body main section#why-rust .container .buttons ul li img {
   width: 10%;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  body main section#why-rust .container .buttons ul li img {
+    display: none;
+  }
 }
 body main section#why-rust .container .buttons ul li h3 {
   width: 70%;
@@ -318,6 +352,12 @@ body main section#why-rust .container .buttons ul li h3 {
   line-height: 1.5em;
   letter-spacing: 2px;
   text-align: left;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  body main section#why-rust .container .buttons ul li h3 {
+    font-size: 10px;
+    padding-left: 0;
+  }
 }
 body main section#why-rust .container .main {
   padding: 25px;
@@ -331,10 +371,10 @@ body main section#why-rust .container .main {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body main section#why-rust .container .main {
-    width: 80%;
-    height: 500px;
+    width: 70%;
+    height: auto;
   }
 }
 body main section#why-rust .container .main .content h3 {
@@ -345,16 +385,22 @@ body main section#why-rust .container .main .content h3 {
   letter-spacing: 2px;
   margin: 20px 0 10px;
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  body main section#why-rust .container .main .content h3 {
+    font-size: 14px;
+  }
+}
 body main section#why-rust .container .main .content img {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body main section#why-rust .container .main .content p {
     text-align: justify;
     overflow: hidden;
+    font-size: 14px;
   }
 }
 body main section#use-case {
@@ -372,7 +418,7 @@ body main section#use-case ul {
   align-items: center;
   flex-wrap: wrap;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body main section#use-case ul {
     flex-direction: column;
   }
@@ -388,9 +434,10 @@ body main section#use-case ul li {
   align-items: center;
   filter: grayscale(100%);
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body main section#use-case ul li {
     width: 100%;
+    height: 250px;
   }
 }
 body main section#use-case ul li#web {
@@ -442,7 +489,7 @@ body main section#use-case ul li div a {
 body main section#about-me {
   display: flex;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body main section#about-me {
     flex-direction: column;
   }
@@ -455,7 +502,7 @@ body main section#about-me .rusty {
   height: 300px;
   margin: 50px 0;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body main section#about-me .rusty {
     height: 200px;
     width: 100%;
@@ -469,10 +516,10 @@ body main section#about-me .presentation {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body main section#about-me .presentation {
     width: 100%;
-    height: 200px;
+    height: auto;
     padding: 25px 0;
   }
 }
@@ -496,7 +543,7 @@ body main section#about-me .presentation .button:hover {
 body main section#services {
   display: flex;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body main section#services {
     flex-direction: column-reverse;
   }
@@ -508,9 +555,9 @@ body main section#services .photo {
   width: 50%;
   height: 400px;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body main section#services .photo {
-    height: 200px;
+    height: 250px;
     width: 100%;
   }
 }
@@ -522,22 +569,27 @@ body main section#services .services {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body main section#services .services {
     width: 100%;
-    height: 450px;
+    height: auto;
     padding: 25px 0;
   }
 }
 body main section#services .services h2 {
   font-size: 25px;
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  body main section#services .services p {
+    padding: 0 10px;
+  }
+}
 body main section#services .services ul {
   margin-top: 25px;
   display: flex;
   justify-content: space-evenly;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body main section#services .services ul {
     flex-direction: column;
     justify-content: center;
@@ -554,7 +606,7 @@ body main section#services .services ul li {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body main section#services .services ul li {
     margin-bottom: 10px;
   }

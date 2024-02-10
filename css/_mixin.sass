@@ -1,3 +1,7 @@
 @mixin media-screen($breakpoint)
     @media screen and (max-width: $breakpoint)
         @content
+
+@mixin media-screen-between($breakpoint-min, $breakpoint-max)
+    @media only screen and (min-width: $breakpoint-min) and (max-width: $breakpoint-max)
+        @content
