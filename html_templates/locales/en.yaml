@@ -265,7 +265,7 @@ body:
           text: "In-depth learning of fullstack development with JavaScript, covering both frontend and backend, and introducing frameworks such as Node.js and Express."
           categories:
             first: "Web"
-        ninth:
+        nineth:
           h2: "Javascript - Frontend"
           text: "Focus on frontend development with JavaScript, covering popular libraries like Vue.js to create interactive and responsive user interfaces."
           categories:
