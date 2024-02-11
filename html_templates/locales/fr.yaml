@@ -7,6 +7,9 @@ head:
     css:
       index: "css/style_index.min.css"
       contact: "css/style_contact.min.css"
+      freelance: "css/style_freelance.min.css"
+      project: "css/style_projets.min.css"
+      training: "css/style_formation.min.css"
   locale: 'i18next.use(i18nextBrowserLanguageDetector).use(i18nextHttpBackend).init({debug:!0,fallbackLng:"fr-FR",lng:["fr-FR","en-US"],backend:{loadPath:"locales/{{lng}}/{{ns}}.json"}});'
 body:
   header:
@@ -104,6 +107,100 @@ body:
         email: "Votre Email"
         message: "Votre Message"
         submit: "Envoyer votre message"
+    freelance:
+      h1: "Mes compétences au service de vos besoins"
+      background:
+        h2: "Mon parcours"
+        text: "Ancien chercheur en sciences cognitives, je me suis reconverti il
+          y a plusieurs années pour devenir développeur web fullstack et me
+          spécialise depuis en RUST (Actix Web), PHP (Laravel), et
+          Javascript (NestJS, VueJS)"
+        buttons:
+          contact_me: "Me contacter"
+          cv:
+            href: "files/CV_COUFFE.pdf"
+            button: "Télécharger mon CV"
+      missions:
+        h2: "Exemples de missions"
+        exemples:
+          first:
+            h3: "Développement d'un site vitrine"
+            text:
+              "Création d'un site web moderne et convivial mettant en avant les
+              services de l'entreprise, avec des pages dédiées à chaque
+              service, des informations de contact, et une galerie d'images."
+          second:
+            h3: "Développement d'une application web sur mesure"
+            text: "Création d'une application web personnalisée répondant aux
+              besoins spécifiques d'un client, avec des fonctionnalités
+              uniques et une interface utilisateur intuitive."
+          third:
+            h3: "Intégration de fonctionnalités avancées sur un site existant"
+            text:
+              "Ajout de fonctionnalités telles que des formulaires interactifs,
+              des cartes interactives, ou des outils de recherche avancés à un
+              site existant pour améliorer son utilité."
+          fourth:
+            h3: "Développement d'une interface d'administration"
+            text: "Conception et mise en œuvre d'une interface d'administration
+              conviviale pour un site web complexe, permettant aux
+              propriétaires du site de gérer facilement les utilisateurs, le
+              contenu et les paramètres."
+      references:
+        h2: "Références"
+      values:
+        h2: "Mes valeurs"
+        first:
+          h3: "Curieux"
+          text: "Obtention du CAP pâtissier candidat libre en 2018"
+        second:
+          h3: "Explorateur"
+          text: "Séjours longs aux Galapagos, Etats-Unis, Japon, Costa Rica"
+        third:
+          h3: "Responsable"
+          text: "Réalisation de plusieurs missions de volontariat écologique"
+        fourth:
+          h3: "Compétiteur"
+          text: "Plusieurs saisons en tournois E-sport amateurs européens"
+        fifth:
+          h3: "Energique"
+          text: "Pratique régulière du running et oiseau de nuit"
+        sixth:
+          h3: "Impliqué"
+          text: "Séjours linguistiques pour pratiquer des langues etrangères"
+      skills-degree:
+        h2: "A propos de moi"
+        skills:
+          h3: "Mes compétences"
+          first: "Développement web : <strong>RUST</strong> (Actix Web, Juniper,
+            SeaORM, Diesel), <strong>PHP</strong> (Symfony, Laravel,
+            Eloquent, Doctrine), <strong>Javascript</strong> (NestJS,
+            Vue.JS, Quasar), HTML, CSS, SCSS/SASS"
+          second: "Développement API : <strong>REST</strong>,
+            <strong>GraphQL</strong>"
+          third: "Base de données : <strong>MySQL</strong>,
+            <strong>PostgreSQL</strong>"
+          fourth:
+            "Conteneurisation et versionning : <strong>Git</strong> (Gitlab,
+            Github), <strong>Docker</strong>"
+        degree:
+          h3: "Mes diplômes"
+          first: "Titre RNCP niveau 6
+            <strong>Concepteur Développeur d'Application</strong>"
+          second: "<strong>Docteur</strong> en Psychologie cognitive"
+          third: "Diplôme universitaire
+            <strong>Gestion des Systèmes Industriels</strong>"
+          fourth: "Titre de <strong>neuropsychologue</strong> - analyse des
+            comportements humains"
+      where:
+        h2: "Ma localisation"
+        first: "Je suis basé à <strong>Lyon</strong>. Mon périmètre géographique
+          d'intervention comprend la région AURA, ainsi que la France
+          entière selon les cas (télétravail total ou partiel, déplacements
+          ponctuels)"
+        second: "<strong>Agile</strong>, je peux aussi bien travailler en
+          télétravail total ou en présentiel les préférences de votre
+          organisation."
   footer:
     text: "&copy; 2024 - Freelance et Formateur Rust/Web Lyon/France"
 links:

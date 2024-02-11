@@ -7,6 +7,9 @@ head:
     css:
       index: "css/style_index.min.css"
       contact: "css/style_contact.min.css"
+      freelance: "css/style_freelance.min.css"
+      project: "css/style_projets.min.css"
+      training: "css/style_formation.min.css"
   locale: 'i18next.use(i18nextBrowserLanguageDetector).use(i18nextHttpBackend).init({debug:!0,fallbackLng:"fr-FR",lng:["fr-FR","en-US"],backend:{loadPath:"locales/{{lng}}/{{ns}}.json"}});'
 body:
   header:
@@ -102,6 +105,71 @@ body:
         email: "Your Email"
         message: "Your Message"
         submit: "Send your message"
+    freelance:
+      h1: "My skills at your service"
+      background:
+        h2: "My background"
+        text: "Former cognitive science researcher, I reconverted several years ago to become a fullstack web developer and have since specialized in RUST (Actix Web), PHP (Laravel), and Javascript (NestJS, VueJS)"
+        buttons:
+          contact_me: "Contact me"
+          cv:
+            href: "files/CV_COUFFE.pdf"
+            button: "Download my CV"
+      missions:
+        h2: "Mission Examples"
+        exemples:
+          first:
+            h3: "Development of a showcase website"
+            text: "Creation of a modern and user-friendly website showcasing the company's services, with dedicated pages for each service, contact information, and an image gallery."
+          second:
+            h3: "Development of a custom web application"
+            text: "Creation of a customized web application tailored to the specific needs of a client, with unique features and an intuitive user interface."
+          third:
+            h3: "Integration of advanced features into an existing website"
+            text: "Adding features such as interactive forms, interactive maps, or advanced search tools to an existing website to enhance its utility."
+          fourth:
+            h3: "Development of an administration interface"
+            text: "Design and implementation of a user-friendly administration interface for a complex website, allowing site owners to easily manage users, content, and settings."
+      references:
+        h2: "References"
+      values:
+        h2: "My values"
+        first:
+          h3: "Curious"
+          text: "Obtained CAP pastry chef certification as a self-taught candidate in 2018"
+        second:
+          h3: "Explorer"
+          text: "Extended stays in the Galapagos, United States, Japan, Costa Rica"
+        third:
+          h3: "Responsible"
+          text: "Completion of several ecological volunteering missions"
+        fourth:
+          h3: "Competitive"
+          text: "Participation in several seasons of amateur esports tournaments in Europe"
+        fifth:
+          h3: "Energetic"
+          text: "Regular practice of running and night owl"
+        sixth:
+          h3: "Involved"
+          text: "Language immersion trips to practice foreign languages"
+      skills-degree:
+        h2: "About me"
+        skills:
+          h3: "My skills"
+          first: "Web development: <strong>RUST</strong> (Actix Web, Juniper, SeaORM, Diesel), <strong>PHP</strong> (Symfony, Laravel, Eloquent, Doctrine), <strong>Javascript</strong> (NestJS, Vue.JS, Quasar), HTML, CSS, SCSS/SASS"
+          second: "API development: <strong>REST</strong>, <strong>GraphQL</strong>"
+          third: "Database: <strong>MySQL</strong>, <strong>PostgreSQL</strong>"
+          fourth: "Containerization and version control: <strong>Git</strong> (Gitlab, Github), <strong>Docker</strong>"
+        degree:
+          h3: "My degrees"
+          first: "RNCP level 6 title <strong>Application Developer Designer</strong>"
+          second: "<strong>Doctor</strong> in Cognitive Psychology"
+          third: "University diploma <strong>Industrial Systems Management</strong>"
+          fourth: "Title of <strong>neuropsychologist</strong> - analysis of human behaviors"
+      where:
+        h2: "My location"
+        first: "I am based in <strong>Lyon</strong>. My geographical area of intervention includes the AURA region, as well as the entire France depending on the cases (full or partial telecommuting, occasional travel)"
+        second: "<strong>Agile</strong>, I can work equally well in full telecommuting or in-person according to your organization's preferences."
   footer:
     text: "&copy; 2024 - Freelance and Trainer Rust/Web Lyon/France"
 links:
