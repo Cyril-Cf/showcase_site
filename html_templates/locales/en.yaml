@@ -214,9 +214,76 @@ body:
             link:
               h3: "Links:"
               text: "Github repository link"
+    training:
+      h1: "Available trainings"
+      menu:
+        h2: "Categories"
+        first: "All"
+        second: "Initiation"
+        third: "Web"
+        fourth: "Web tools"
+      items:
+        categories: "Category(ies):"
+        button: "Interested? Contact me!"
+        first:
+          h2: "RUST - Initiation"
+          text: "Introductory training in Rust programming, focusing on the fundamental concepts of the language and providing a solid foundation for future developers."
+          categories:
+            first: "Initiation"
+        second:
+          h2: "RUST - Web Development"
+          text: "Learning the principles of web development with Rust, exploring the frameworks and tools that allow creating robust and high-performance web applications."
+          categories:
+            first: "Web"
+        third:
+          h2: "PYTHON - Introduction to Programming"
+          text: "Learning the principles of programming (variables, control structures, Object-Oriented Programming, etc.), with the PYTHON language."
+          categories:
+            first: "Initiation"
+        fourth:
+          h2: "Docker - Containerization"
+          text: "In-depth exploration of Docker, teaching how to create, manage, and deploy containers to optimize application deployment in diverse environments."
+          categories:
+            first: "Web tools"
+        fifth:
+          h2: "Git - Version Control"
+          text: "Learning the basics of Git, the version control system, to enable effective management of source code, collaboration, and tracking of changes."
+          categories:
+            first: "Web tools"
+        sixth:
+          h2: "HTML/CSS - Static Web"
+          text: "Training focused on creating static websites using HTML for content and CSS for formatting, providing a deep understanding of the basics of web development."
+          categories:
+            first: "Web"
+        seventh:
+          h2: "Javascript - Static Web"
+          text: "Exploration of JavaScript fundamentals for static web development, with an emphasis on DOM manipulation, events, and dynamic user interactions."
+          categories:
+            first: "Web"
+        eighth:
+          h2: "Javascript - Fullstack Development"
+          text: "In-depth learning of fullstack development with JavaScript, covering both frontend and backend, and introducing frameworks such as Node.js and Express."
+          categories:
+            first: "Web"
+        ninth:
+          h2: "Javascript - Frontend"
+          text: "Focus on frontend development with JavaScript, covering popular libraries like Vue.js to create interactive and responsive user interfaces."
+          categories:
+            first: "Web"
+        tenth:
+          h2: "Javascript - Backend"
+          text: "Specialized training in backend development with JavaScript, exploring server concepts, database management, and interaction with the frontend."
+          categories:
+            first: "Web"
+        eleventh:
+          h2: "PHP - Backend"
+          text: "In-depth learning of backend development with PHP, covering the fundamental principles of the language and its use for creating dynamic web servers."
+          categories:
+            first: "Web"
   footer:
     text: "&copy; 2024 - Freelance and Trainer Rust/Web Lyon/France"
 links:
   js:
     index: "js/script.js"
     contact: "js/contact_script.prod.js"
+    training: "js/formation_script.prod.js"

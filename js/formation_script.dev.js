@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         key = key.replace(/\(\d+\)/g, "");
       }
 
-      if (key == "Toutes") {
+      if (key == "Toutes" || key == "All") {
         var total = Array.from(hashmap.values()).reduce(function (acc, valeur) {
           return acc + valeur;
         }, 0);

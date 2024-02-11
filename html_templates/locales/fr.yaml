@@ -246,9 +246,103 @@ body:
             link:
               h3: "liens :"
               text: "Lien repository github"
+    training:
+      h1: "Formations disponibles"
+      menu:
+        h2: "Catégories"
+        first: "Toutes"
+        second: "Initiation"
+        third: "Web"
+        fourth: "Outils du web"
+      items:
+        categories: "Catégorie(s) :"
+        button: "Intéressé(e) ? Contactez moi !"
+        first:
+          h2: "RUST - Initiation"
+          text: "Formation introductive à la programmation en Rust, mettant
+            l'accent sur les concepts fondamentaux du langage et
+            fournissant une base solide pour les futurs développeurs."
+          categories:
+            first: "Initiation"
+        second:
+          h2: "RUST - Développement web"
+          text: "Apprentissage des principes du développement web avec
+            Rust, explorant les frameworks et les outils qui
+            permettent de créer des applications web robustes et
+            performantes."
+          categories:
+            first: "Web"
+        third:
+          h2: "PYTHON - Initiation à la programmation"
+          text: "Apprentissage des principes de la programmation
+            (variables, structures de contrôle, Programmation Orientée
+            Objet, etc.), avec le langage PYTHON."
+          categories:
+            first: "Initiation"
+        fourth:
+          h2: "Docker - Conteneurisation"
+          text: "Exploration approfondie de Docker, enseignant comment
+            créer, gérer et déployer des conteneurs pour optimiser le
+            déploiement d'applications dans des environnements divers."
+          categories:
+            first: "Outils du web"
+        fifth:
+          h2: "Git - Versionner le code"
+          text: "Apprentissage des bases de Git, le système de contrôle de
+            version, pour permettre une gestion efficace du code
+            source, la collaboration et le suivi des modifications."
+          categories:
+            first: "Outils du web"
+        sixth:
+          h2: "HTML/CSS - web statique"
+          text: "Formation axée sur la création de sites web statiques en
+            utilisant HTML pour le contenu et CSS pour la mise en
+            forme, offrant une compréhension approfondie des bases du
+            développement web."
+          categories:
+            first: "Web"
+        seventh:
+          h2: "Javascript - web statique"
+          text: "Exploration des fondamentaux de JavaScript pour le
+            développement web statique, en mettant l'accent sur la
+            manipulation du DOM, les événements, et la création
+            d'interactions utilisateur dynamiques."
+          categories:
+            first: "Web"
+        eighth:
+          h2: "Javascript - Developpement fullstack"
+          text: "Apprentissage approfondi du développement fullstack avec
+            JavaScript, couvrant à la fois le frontend et le backend,
+            et introduisant des frameworks tels que Node.js et
+            Express."
+          categories:
+            first: "Web"
+        nineth:
+          h2: "Javascript - Frontend"
+          text: "Focus sur le développement frontend avec JavaScript,
+            couvrant les bibliothèques populaires comme Vue.js pour
+            créer des interfaces utilisateur interactives et
+            réactives."
+          categories:
+            first: "Web"
+        tenth:
+          h2: "Javascript - Backend"
+          text: "Formation spécialisée dans le développement backend avec
+            JavaScript, explorant les concepts du serveur, la gestion
+            des bases de données et l'interaction avec le frontend."
+          categories:
+            first: "Web"
+        eleventh:
+          h2: "PHP - Backend"
+          text: "Apprentissage approfondi du développement backend avec
+            PHP, couvrant les principes fondamentaux du langage et son
+            utilisation pour la création de serveurs web dynamiques."
+          categories:
+            first: "Web"
   footer:
     text: "&copy; 2024 - Freelance et Formateur Rust/Web Lyon/France"
 links:
   js:
     index: "js/script.js"
     contact: "js/contact_script.prod.js"
+    training: "js/formation_script.prod.js"

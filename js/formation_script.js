@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (/\(\d+\)/.test(key)) {
         key = key.replace(/\(\d+\)/g, "");
       }
-      if (key == "Toutes") {
+      if (key == "Toutes" || key == "All") {
         const total = Array.from(hashmap.values()).reduce(
           (acc, valeur) => acc + valeur,
           0

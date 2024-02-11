@@ -1,6 +1,164 @@
 extends templates/layout
 
 block css_link
-    link(rel="stylesheet" data-attr-t="" data-attr-t-interpolate="" href-t="{{head.links.css}}")
+    link(rel="stylesheet" data-attr-t="" data-attr-t-interpolate="" href-t="{{head.links.css.training}}")
 
 block main
+    section#cours
+        h1(data-t="") body.main.training.h1
+        .divider
+        .container
+            .menu
+                div
+                    h2(data-t="") body.main.training.menu.h2
+                    ul
+                        li
+                            input(type="checkbox" id="all")
+                            p(data-t="") body.main.training.menu.first
+                        li
+                            input(type="checkbox" id="initiation")
+                            p(data-t="") body.main.training.menu.second
+                        li
+                            input(type="checkbox" id="web")
+                            p(data-t="") body.main.training.menu.third
+                        li
+                            input(type="checkbox" id="web-tools")
+                            p(data-t="") body.main.training.menu.fourth
+            .items
+                ul
+                    li
+                        .card
+                            img(src="img/meeting.avif" alt="Rust initiation")
+                            .content
+                                h2(data-t="") body.main.training.items.first.h2
+                                .categories
+                                    h3(data-t="") body.main.training.items.categories
+                                    ul
+                                        li(data-t="") body.main.training.items.first.categories.first
+                                p(data-t="") body.main.training.items.first.text
+                                .button
+                                    a(href="contact.html" data-t="") body.main.training.items.button
+                    li
+                        .card
+                            img(src="img/network.avif" alt="Rust web")
+                            .content
+                                h2(data-t="") body.main.training.items.second.h2
+                                .categories
+                                    h3(data-t="") body.main.training.items.categories
+                                    ul
+                                        li(data-t="") body.main.training.items.second.categories.first
+                                p(data-t="") body.main.training.items.second.text
+                                .button
+                                    a(href="contact.html" data-t="") body.main.training.items.button
+                    li
+                        .card
+                            img(src="img/learning2.avif" alt="Programmation Python")
+                            .content
+                                h2(data-t="") body.main.training.items.third.h2
+                                .categories
+                                    h3(data-t="") body.main.training.items.categories
+                                    ul
+                                        li(data-t="") body.main.training.items.third.categories.first
+                                p(data-t="") body.main.training.items.third.text
+                                .button
+                                    a(href="contact.html" data-t="") body.main.training.items.button
+                    li
+                        .card
+                            img(src="img/dashboard.avif" alt="Docker")
+                            .content
+                                h2(data-t="") body.main.training.items.fourth.h2
+                                .categories
+                                    h3(data-t="") body.main.training.items.categories
+                                    ul
+                                        li(data-t="") body.main.training.items.fourth.categories.first
+                                p(data-t="") body.main.training.items.fourth.text
+                                .button
+                                    a(href="contact.html" data-t="") body.main.training.items.button
+                    li
+                        .card
+                            img(src="img/git.avif" alt="Git")
+                            .content
+                                h2(data-t="") body.main.training.items.fifth.h2
+                                .categories
+                                    h3(data-t="") body.main.training.items.categories
+                                    ul
+                                        li(data-t="") body.main.training.items.fifth.categories.first
+                                p(data-t="") body.main.training.items.fifth.text
+                                .button
+                                    a(href="contact.html" data-t="") body.main.training.items.button
+                    li
+                        .card
+                            img(src="img/wireframe.avif" alt="HTML CSS")
+                            .content
+                                h2(data-t="") body.main.training.items.sixth.h2
+                                .categories
+                                    h3(data-t="") body.main.training.items.categories
+                                    ul
+                                        li(data-t="") body.main.training.items.sixth.categories.first
+                                p(data-t="") body.main.training.items.sixth.text
+                                .button
+                                    a(href="contact.html" data-t="") body.main.training.items.button
+                    li
+                        .card
+                            img(src="img/graphs.avif" alt="Graphs")
+                            .content
+                                h2(data-t="") body.main.training.items.seventh.h2
+                                .categories
+                                    h3(data-t="") body.main.training.items.categories
+                                    ul
+                                        li(data-t="") body.main.training.items.seventh.categories.first
+                                p(data-t="") body.main.training.items.seventh.text
+                                .button
+                                    a(href="contact.html" data-t="") body.main.training.items.button
+                    li
+                        .card
+                            img(src="img/wasd.avif" alt="Javascript fullstack")
+                            .content
+                                h2(data-t="") body.main.training.items.eighth.h2
+                                .categories
+                                    h3(data-t="") body.main.training.items.categories
+                                    ul
+                                        li(data-t="") body.main.training.items.eighth.categories.first
+                                p(data-t="") body.main.training.items.eighth.text
+                                .button
+                                    a(href="contact.html" data-t="") body.main.training.items.button
+                    li
+                        .card
+                            img(src="img/mac.avif" alt="Javascript frontend")
+                            .content
+                                h2(data-t="") body.main.training.items.nineth.h2
+                                .categories
+                                    h3(data-t="") body.main.training.items.categories
+                                    ul
+                                        li(data-t="") body.main.training.items.nineth.categories.first
+                                p(data-t="") body.main.training.items.nineth.text
+                                .button
+                                    a(href="contact.html" data-t="") body.main.training.items.button
+                    li
+                        .card
+                            img(src="img/serveur.avif" alt="Javascript backend")
+                            .content
+                                h2(data-t="") body.main.training.items.tenth.h2
+                                .categories
+                                    h3(data-t="") body.main.training.items.categories
+                                    ul
+                                        li(data-t="") body.main.training.items.tenth.categories.first
+                                p(data-t="") body.main.training.items.tenth.text
+                                .button
+                                    a(href="contact.html" data-t="") body.main.training.items.button
+                    li
+                        .card
+                            img(src="img/php.avif" alt="PHP backend")
+                            .content
+                                h2(data-t="") body.main.training.items.eleventh.h2
+                                .categories
+                                    h3(data-t="") body.main.training.items.categories
+                                    ul
+                                        li(data-t="") body.main.training.items.eleventh.categories.first
+                                p(data-t="") body.main.training.items.eleventh.text
+                                .button
+                                    a(href="contact.html" data-t="") body.main.training.items.button
+
+
+block js-script
+    script(data-attr-t="" data-attr-t-interpolate="" src-t="{{links.js.training}}")
