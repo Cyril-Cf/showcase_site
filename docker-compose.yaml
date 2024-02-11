@@ -9,5 +9,7 @@ services:
       sh -c "\
       pug html_templates/pug/*.pug -o html_templates --pretty \
       && static-i18n -o . --file-format yaml --allow-html -l fr -i en -i fr html_templates \
+      && html-minifier --input-dir . --output-dir . --file-ext html --collapse-whitespace \
+      && terser ./js/*.js --output ./js/*.min.js \
       && rm -rf ./en/locales \
-      && cp -r ./locales ./en/locales"
+      && cp -r ./locales ./en/locales" \
