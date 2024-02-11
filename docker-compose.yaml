@@ -1,9 +1,13 @@
 version: "3.9"
 
 services:
-  i18n:
-    build: "./docker/i18n"
+  building:
+    build: "./docker/building"
     volumes:
       - ".:/tmp"
     command: >
-      sh -c "static-i18n -o . --file-format yaml --allow-html -l fr -i en -i fr html_untranslated && rm -rf ./en/locales && cp -r ./locales ./en/locales"
+      sh -c "\
+      pug html_templates/pug/*.pug -o html_templates --pretty \
+      && static-i18n -o . --file-format yaml --allow-html -l fr -i en -i fr html_templates \
+      && rm -rf ./en/locales \
+      && cp -r ./locales ./en/locales"

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBE6SSQV9Z"></script>
+    <!-- Google tag (gtag.js)-->
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-TBE6SSQV9Z" async></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
-        dataLayer.push(arguments);
+      dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-TBE6SSQV9Z");
     </script>
     <meta charset="UTF-8">
@@ -23,54 +22,41 @@
     <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
     <script>
       i18next.use(i18nextHttpBackend).init({
-        debug: !0,
-        fallbackLng: ["fr-FR", "en-US"],
-        lng: ["fr-FR", "en-US"],
-        backend: { loadPath: "locales/{{lng}}/{{ns}}.json" },
+      debug: !0,
+      fallbackLng: ["fr-FR", "en-US"],
+      lng: ["fr-FR", "en-US"],
+      backend: { loadPath: "locales/{{lng}}/{{ns}}.json" },
       });
     </script>
     <script defer src="js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style_index.min.css">
   </head>
-
   <body>
     <header>
       <div class="top">
-        <div class="logo">
-          <a href="index.html"><img alt="logo" src="img/logo.avif"></a>
-        </div>
+        <div class="logo"><a href="index.html"><img alt="logo" src="img/logo.avif"></a></div>
         <nav>
-          <div class="burger-menu">
-            <img class="burger-icon" src="img/burger.svg">
-          </div>
+          <div class="burger-menu"><img class="burger-icon" src="img/burger.svg"></div>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li>
-              <a href="training.html">Formations</a>
-            </li>
-            <li>
-              <a href="freelance.html">Freelance</a>
-            </li>
+            <li><a href="training.html">Formations</a></li>
+            <li><a href="freelance.html">Freelance</a></li>
             <li><a href="projects.html">Projets</a></li>
-            <a href="contact.html">
-              <li class="button">Contact</li>
-            </a>
+            <li><a href="contact.html"></a>
+              </li><li class="button">Contact</li>
+            
           </ul>
-          <div id="locale-selector">
-            <img id="fr-FR" alt="French Flag" src="img/french_flag.avif">
-            <img id="en-US" alt="English Flag" src="img/us_flag.webp">
-          </div>
+          <div id="locale-selector"><img id="fr-FR" alt="French Flag" src="img/french_flag.avif"><img id="en-US" alt="English Flag" src="img/us_flag.webp"></div>
         </nav>
       </div>
       <div class="bottom">
         <div class="title">
-          <div class="first-line">
-            <hr>
-            <p>Enflammez vos projets</p>
-          </div>
+          <div class="first-line"></div>
+          <hr>
+          <p>Enflammez vos projets</p>
           <h1>Freelance et Formateur Lyon/France</h1>
           <p><strong>Freelance</strong> en développement pour des projets et formations innovantes (Rust, PHP, Javascript).</p>
           <p><strong>Formateur</strong> aux technologies classiques du web fullstack (HTML, CSS, Javascript, PHP, Docker, GIT) et à la programmation en Rust.</p>
@@ -82,48 +68,38 @@
       <section id="why-rust">
         <h2>Pourquoi Rust ?</h2>
         <div class="divider"></div>
-
         <p>Le langage de programmation Rust offre une approche novatrice du développement. En choisissant Rust, vous bénéficiez de :</p>
-
         <div class="container">
           <div class="buttons">
             <ul>
-              <li id="security">
-                <img alt="code" src="img/code.svg">
+              <li id="security"><img alt="code" src="img/code.svg">
                 <h3>Sécurité de la Mémoire</h3>
               </li>
-              <li id="performance">
-                <img alt="code" src="img/battery-full.svg">
+              <li id="performance"><img alt="code" src="img/battery-full.svg">
                 <h3>Performances Exceptionnelles</h3>
               </li>
-              <li id="concurrency">
-                <img alt="code" src="img/vr-cardboard.svg">
+              <li id="concurrency"><img alt="code" src="img/vr-cardboard.svg">
                 <h3>Concurrence Sans Douleur</h3>
               </li>
-              <li id="abstraction">
-                <img alt="code" src="img/microscope.svg">
+              <li id="abstraction"><img alt="code" src="img/microscope.svg">
                 <h3>Abstraction Sans Perte de perfs</h3>
               </li>
-              <li id="ecosystem">
-                <img alt="code" src="img/wifi.svg">
+              <li id="ecosystem"><img alt="code" src="img/wifi.svg">
                 <h3>Un Écosystème Actif</h3>
               </li>
-              <li id="use_case">
-                <img alt="code" src="img/wrench.svg">
+              <li id="use_case"><img alt="code" src="img/wrench.svg">
                 <h3>De multiples cas d'usage</h3>
               </li>
             </ul>
           </div>
           <div class="main">
-            <div class="content">
-              <img alt="lock" src="img/security.avif">
+            <div class="content"><img alt="lock" src="img/security.avif">
               <h3>Sécurité de la Mémoire</h3>
               <p>Rust élimine élégamment les erreurs de gestion de la mémoire courantes, telles que les pointeurs nuls et les débordements de tampon. Son système de possession et de gestion de la mémoire garantit une sécurité sans sacrifier les performances, offrant ainsi une protection contre les failles de sécurité potentielles.</p>
             </div>
           </div>
         </div>
       </section>
-
       <section id="use-case">
         <h2>Cas d'usage</h2>
         <div class="divider"></div>
@@ -145,7 +121,6 @@
           </li>
         </ul>
       </section>
-
       <section id="about-me">
         <div class="rusty"></div>
         <div class="presentation">
@@ -154,12 +129,10 @@
               <h2>À Propos de Moi</h2>
               <div class="divider"></div>
               <p>Je suis un professionnel du développement web basé à Lyon, offrant des services de freelance et de formation.</p>
-            </div>
-            <a href="contact.html" class="button">Me contacter</a>
+            </div><a class="button" href="contact.html">Me contacter</a>
           </div>
         </div>
       </section>
-
       <section id="services">
         <div class="services">
           <div>
@@ -168,12 +141,10 @@
             <p>En tant que freelance et formateur Rust, je propose les services suivants :</p>
             <ul>
               <li>
-                <h3>Développement pour des projets web sur mesure</h3>
-                <a href="freelance.html">En savoir plus</a>
+                <h3>Développement pour des projets web sur mesure</h3><a href="freelance.html">En savoir plus</a>
               </li>
               <li>
-                <h3>Formations pour les équipes de développement et étudiants</h3>
-                <a href="training.html">En savoir plus</a>
+                <h3>Formations pour les équipes de développement et étudiants</h3><a href="training.html">En savoir plus</a>
               </li>
             </ul>
           </div>
