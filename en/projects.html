@@ -1,137 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBE6SSQV9Z"></script>
+    <!-- Google tag (gtag.js)-->
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-TBE6SSQV9Z" async></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
-        dataLayer.push(arguments);
+      dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-TBE6SSQV9Z");
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Découvrez les projets de Cyril Couffe, Freelance Rust à Lyon. Des réalisations innovantes et sur mesure en développement Rust.">
-    <meta name="keywords" content="Projets Rust, Réalisations Rust, Freelance Rust, Lyon, Développement Rust, Développement web">
+    <meta name="description" content="Freelance and Rust trainer in Lyon, FRANCE. Expert in Rust development for innovative projects.">
+    <meta name="keywords" content="Rust Freelance, Rust Trainer, Lyon, Rust Developer, Rust Expert">
     <meta name="author" content="Cyril Couffe">
-    <title>Portfolio RUST/WEB</title>
+    <title>Freelance and Trainer RUST/WEB</title>
     <link rel="icon" href="../img/logo.ico">
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.2.1/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
+    <script>
+      i18next.use(i18nextHttpBackend).init({
+      debug: !0,
+      fallbackLng: ["fr-FR", "en-US"],
+      lng: ["fr-FR", "en-US"],
+      backend: { loadPath: "locales/{{lng}}/{{ns}}.json" },
+      });
+    </script>
+    <script defer src="../js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style_projets.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../undefined">
   </head>
   <body>
     <header>
       <div class="top">
-        <div class="logo">
-          <a href="index.html"><img src="../img/logo.avif" alt="logo"></a>
-        </div>
+        <div class="logo"><a href="index.html"><img alt="logo" src="../img/logo.avif"></a></div>
         <nav>
+          <div class="burger-menu"><img class="burger-icon" src="../img/burger.svg"></div>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="formations.html">Formations</a></li>
-            <li><a href="freelance.html">Freelance</a></li>
-            <li><a href="projets.html">Projets</a></li>
-            <li class="button"><a href="contact.html">Contact</a></li>
+            <li><a href="training.html">Trainings</a></li>
+            <li><a href="freelance.html">Freelancing</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">
+                <li class="button">Contact</li></a></li>
           </ul>
+          <div id="locale-selector"><img id="fr-FR" alt="French Flag" src="../img/french_flag.avif"><img id="en-US" alt="English Flag" src="../img/us_flag.webp"></div>
         </nav>
       </div>
     </header>
     <main>
-      <h1>Exemples de projets</h1>
-      <div class="divider"></div>
-      <section id="projects">
-        <ul>
-          <li class="card">
-            <img src="../img/rusty_dungeon.webp" alt="Projet 1">
-            <div class="content">
-              <h2>Rusty Dungeon</h2>
-              <p>
-                Projet exploratoire d'aventure Rogue-like en ligne de commande
-                pour m'entrainer à l'usage de la librairie Ratatui
-                (Terminal-based Interface)
-              </p>
-              <div class="precisions">
-                <h3>Technos :</h3>
-                <ul>
-                  <li>Rust</li>
-                  <li>Ratatui</li>
-                  <li>Docker</li>
-                </ul>
-              </div>
-              <div class="precisions">
-                <h3>liens :</h3>
-                <ul>
-                  <li>
-                    <a href="https://github.com/Cyril-Cf/rusty_adventures" target="_blank">Lien repository github</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="card">
-            <img src="../img/light.avif" alt="Projet 1">
-            <div class="content">
-              <h2>API minimale - RUST</h2>
-              <p>
-                Boilerplate d'API minimale utilisant Actix-web, Sea-ORM, les
-                entités, services, controllers, et la logique de migrations
-              </p>
-              <div class="precisions">
-                <h3>Technos :</h3>
-                <ul>
-                  <li>Rust</li>
-                  <li>Actix web</li>
-                  <li>Sea-ORM</li>
-                </ul>
-              </div>
-              <div class="precisions">
-                <h3>liens :</h3>
-                <ul>
-                  <li>
-                    <a href="https://github.com/Cyril-Cf/minimal_rust_api" target="_blank">Lien repository github</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="card">
-            <img src="../img/heatmap.webp" alt="Projet 1">
-            <div class="content">
-              <h2>Eyetracking script - Python</h2>
-              <p>
-                Ce script a été créé dans le but de mesurer l'orientation du
-                regard au moyen d'OpenSesame. Il simule un environnement email
-                pour contrôler comment se comporte un utilisateur face à des
-                situations de tests
-              </p>
-              <div class="precisions">
-                <h3>Technos :</h3>
-                <ul>
-                  <li>Python</li>
-                  <li>OpenSesame</li>
-                  <li>Eyetracking</li>
-                </ul>
-              </div>
-              <div class="precisions">
-                <h3>liens :</h3>
-                <ul>
-                  <li>
-                    <a href="https://github.com/Cyril-Cf/Eyetracking---Python" target="_blank">Lien repository github</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
     </main>
     <footer>
-      <p>&copy; 2024 - Freelance et Formateur Rust/Web Lyon/France</p>
+      <p>&copy; 2024 - Freelance and Trainer Rust/Web Lyon/France</p>
     </footer>
   </body>
 </html>

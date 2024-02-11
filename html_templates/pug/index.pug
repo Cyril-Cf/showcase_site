@@ -1,7 +1,7 @@
 extends templates/layout
 
 block css_link
-    link(rel="stylesheet" data-attr-t="" data-attr-t-interpolate="" href-t="{{head.links.css}}")
+    link(rel="stylesheet" data-attr-t="" data-attr-t-interpolate="" href-t="{{head.links.css.index}}")
 
 block bottom
     div.bottom
@@ -16,72 +16,72 @@ block bottom
 
 block main
     section#why-rust
-        h2(data-t="") body.main.why_rust.h2
+        h2(data-t="") body.main.index.why_rust.h2
         div.divider
-        p(data-t="") body.main.why_rust.explanation
+        p(data-t="") body.main.index.why_rust.explanation
         div.container
             div.buttons
                 ul
                     li#security
-                        img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.why_rust.select_panel.security.link}}" alt="code")
-                        h3(data-t="") body.main.why_rust.select_panel.security.h3
+                        img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.index.why_rust.select_panel.security.link}}" alt="code")
+                        h3(data-t="") body.main.index.why_rust.select_panel.security.h3
                     li#performance
-                        img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.why_rust.select_panel.performance.link}}" alt="code")
-                        h3(data-t="") body.main.why_rust.select_panel.performance.h3
+                        img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.index.why_rust.select_panel.performance.link}}" alt="code")
+                        h3(data-t="") body.main.index.why_rust.select_panel.performance.h3
                     li#concurrency
-                        img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.why_rust.select_panel.concurrency.link}}" alt="code")
-                        h3(data-t="") body.main.why_rust.select_panel.concurrency.h3
+                        img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.index.why_rust.select_panel.concurrency.link}}" alt="code")
+                        h3(data-t="") body.main.index.why_rust.select_panel.concurrency.h3
                     li#abstraction
-                        img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.why_rust.select_panel.abstraction.link}}" alt="code")
-                        h3(data-t="") body.main.why_rust.select_panel.abstraction.h3
+                        img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.index.why_rust.select_panel.abstraction.link}}" alt="code")
+                        h3(data-t="") body.main.index.why_rust.select_panel.abstraction.h3
                     li#ecosystem
-                        img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.why_rust.select_panel.ecosystem.link}}" alt="code")
-                        h3(data-t="") body.main.why_rust.select_panel.ecosystem.h3
+                        img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.index.why_rust.select_panel.ecosystem.link}}" alt="code")
+                        h3(data-t="") body.main.index.why_rust.select_panel.ecosystem.h3
                     li#use_case
-                        img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.why_rust.select_panel.use_case.link}}" alt="code")
-                        h3(data-t="") body.main.why_rust.select_panel.use_case.h3
+                        img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.index.why_rust.select_panel.use_case.link}}" alt="code")
+                        h3(data-t="") body.main.index.why_rust.select_panel.use_case.h3
             div.main
                 div.content
-                    img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.why_rust.select_panel.default.link}}" alt="lock")
-                    h3(data-t="") body.main.why_rust.select_panel.default.h3
-                    p(data-t="") body.main.why_rust.select_panel.default.text
+                    img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.index.why_rust.select_panel.default.link}}" alt="lock")
+                    h3(data-t="") body.main.index.why_rust.select_panel.default.h3
+                    p(data-t="") body.main.index.why_rust.select_panel.default.text
 
     section#use-case
-        h2(data-t="") body.main.use_case.h2
+        h2(data-t="") body.main.index.use_case.h2
         div.divider
         ul
             li#web
-                h3(data-t="") body.main.use_case.web.h3
+                h3(data-t="") body.main.index.use_case.web.h3
             li#ai
-                h3(data-t="") body.main.use_case.ai.h3
+                h3(data-t="") body.main.index.use_case.ai.h3
             li#video_games
-                h3(data-t="") body.main.use_case.video_games.h3
+                h3(data-t="") body.main.index.use_case.video_games.h3
             li#embedded
-                h3(data-t="") body.main.use_case.embedded.h3
+                h3(data-t="") body.main.index.use_case.embedded.h3
             li#system
-                h3(data-t="") body.main.use_case.system.h3
+                h3(data-t="") body.main.index.use_case.system.h3
 
     section#about-me
         div.rusty
         div.presentation
             div
                 div
-                    h2(data-t="") body.main.about_me.presentation.h2
+                    h2(data-t="") body.main.index.about_me.presentation.h2
                     div.divider
-                    p(data-t="") body.main.about_me.presentation.text
-                a.button(href="contact.html" data-t="") body.main.about_me.button.contact
+                    p(data-t="") body.main.index.about_me.presentation.text
+                a.button(href="contact.html" data-t="") body.main.index.about_me.button.contact
 
     section#services
         div.services
             div
-                h2(data-t="") body.main.services.h2
+                h2(data-t="") body.main.index.services.h2
                 div.divider
-                p(data-t="") body.main.services.text
+                p(data-t="") body.main.index.services.text
                 ul
                     li
-                        h3(data-t="") body.main.services.ul.freelance
-                        a(href="freelance.html" data-t="") body.main.services.ul.button.know_more
+                        h3(data-t="") body.main.index.services.ul.freelance
+                        a(href="freelance.html" data-t="") body.main.index.services.ul.button.know_more
                     li
-                        h3(data-t="") body.main.services.ul.trainer
-                        a(href="training.html" data-t="") body.main.services.ul.button.know_more
+                        h3(data-t="") body.main.index.services.ul.trainer
+                        a(href="training.html" data-t="") body.main.index.services.ul.button.know_more
         div.photo

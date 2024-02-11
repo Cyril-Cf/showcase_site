@@ -1,0 +1,33 @@
+extends templates/layout
+
+block css_link
+    link(rel="stylesheet" data-attr-t="" data-attr-t-interpolate="" href-t="{{head.links.css.contact}}")
+
+block main
+    h1(data-t="") body.main.contact.h1
+    div.divider
+    div.container
+        section#me
+            h2(data-t="") body.main.contact.me.h2
+            img(data-attr-t="" data-attr-t-interpolate="" src-t="{{body.main.contact.me.img}}" alt="Ferris the rust crab")
+        section#form
+            h2(data-t="") body.main.contact.form.h2
+            form(name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xvovylnw" method="post" id="contact-form")
+                div.form-group
+                    div.form-item
+                        label(for="nom" data-t="") body.main.contact.form.name
+                        input(type="text" id="nom" name="nom", required)
+                    div.form-item
+                        label(for="email" data-t="") body.main.contact.form.email
+                        input(type="email" id="email" name="email", required)
+                div.form-message
+                    label(for="message" data-t="") body.main.contact.form.message
+                    textarea(id="message" name="message" rows="6", required)
+                div.button
+                    input(type="submit" data-attr-t="" data-attr-t-interpolate="" value-t="{{body.main.contact.form.submit}}" id="submit")
+
+block after-footer
+    div.message#alert
+
+block js-script
+    script(data-attr-t="" data-attr-t-interpolate="" src-t="{{links.js.contact}}")
