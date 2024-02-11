@@ -9,14 +9,21 @@ body
         h1
             font-size: 25px
             padding-top: 75px
+            @include media-screen-between($extra-small-screen-min, $tablet-max)
+                font-size: 20px
+                margin: 0 20px
+                padding-top: 20px
         h2
             font-size: 20px
+            @include media-screen-between($extra-small-screen-min, $tablet-max)
+                font-size: 18px
         .container
             padding: 50px 0
             display: flex
             justify-content: space-evenly
-            @media (max-width: 768px)
+            @include media-screen-between($extra-small-screen-min, $tablet-max)
                 flex-direction: column
+                padding: 0
             #me
                 display: flex
                 flex-direction: column
@@ -26,9 +33,10 @@ body
                 background-color: white
                 border-radius: 20px
                 padding: 30px 0
-                @media (max-width: 768px)
+                @include media-screen-between($extra-small-screen-min, $tablet-max)
                     width: auto
-                    margin: 25px
+                    margin: 0 25px
+                    padding: 10px 0
                 h2
                     width: 65%
                 img
@@ -40,9 +48,10 @@ body
                 border-radius: 20px
                 color: white
                 padding: 30px 0
-                @media (max-width: 768px)
+                @include media-screen-between($extra-small-screen-min, $tablet-max)
                     width: auto
                     margin: 25px
+                    padding: 20px 0
                 label
                     text-align: left
                     text-transform: uppercase
@@ -51,13 +60,20 @@ body
                     display: flex
                     justify-content: space-between
                     margin: 20px 40px
+                    @include media-screen-between($extra-small-screen-min, $tablet-max)
+                        flex-direction: column
+                        margin: 20px 20px
                     .form-item
                         display: flex
                         flex-direction: column
                         &:first-of-type
                             width: 40%
+                            @include media-screen-between($extra-small-screen-min, $tablet-max)
+                                width: 100%
                         &:last-of-type
                             width: 55%
+                            @include media-screen-between($extra-small-screen-min, $tablet-max)
+                                width: 100%
                         input
                             border: none
                             background-color: $section-background-secondary-color
@@ -71,6 +87,8 @@ body
                     display: flex
                     flex-direction: column
                     margin: 20px 40px
+                    @include media-screen-between($extra-small-screen-min, $tablet-max)
+                        margin: 20px 20px
                     textarea
                         border: none
                         background-color: $section-background-secondary-color
@@ -85,6 +103,8 @@ body
                     justify-content: center
                     align-items: center
                     margin: 40px 40px 0 40px
+                    @include media-screen-between($extra-small-screen-min, $tablet-max)
+                        margin: 20px 20px
                     padding: 0
                     border: none
                     input

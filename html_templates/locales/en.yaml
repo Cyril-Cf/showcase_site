@@ -180,7 +180,7 @@ body:
             (Terminal-based Interface)"
           precisions:
             techno:
-              h3: "Technologies:"
+              h3: "Techs:"
               first: "Rust"
               second: "Ratatui"
               third: "Docker"
@@ -193,7 +193,7 @@ body:
             services, controllers, and migration logic"
           precisions:
             techno:
-              h3: "Technologies:"
+              h3: "Techs:"
               first: "Rust"
               second: "Actix web"
               third: "Sea-ORM"
@@ -207,7 +207,7 @@ body:
             to control how a user behaves in test situations"
           precisions:
             techno:
-              h3: "Technologies:"
+              h3: "Techs:"
               first: "Python"
               second: "OpenSesame"
               third: "Eyetracking"
@@ -285,5 +285,5 @@ body:
 links:
   js:
     index: "dist/js/script.min.js"
-    contact: "dist/js/contact_script.min.js"
-    training: "dist/js/formation_script.min.js"
+    contact: "dist/js/script.contact.min.js"
+    training: "dist/js/script.training.min.js"

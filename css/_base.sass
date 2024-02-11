@@ -58,7 +58,7 @@ body
             background-color: rgba(0, 0, 0, 0.85)
             @include media-screen-between($extra-small-screen-min, $tablet-max)
                 font-size: 14px
-                padding: 10px 0
+                padding: 20px 0
                 width: 100%
             .logo
                 a
@@ -113,7 +113,7 @@ body
                         flex-direction: column
                         background-color: #333
                         position: absolute
-                        top: 61px
+                        top: 81px
                         left: 0
                         width: 100%
                         transform: translateY(-100%)
@@ -145,3 +145,6 @@ body
         border-top: 5px $primary-color solid
         background-color: $background-color-footer
         color: white
+        p
+            @include media-screen-between($extra-small-screen-min, $tablet-max)
+                font-size: 16px

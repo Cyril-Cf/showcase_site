@@ -344,5 +344,5 @@ body:
 links:
   js:
     index: "dist/js/script.min.js"
-    contact: "dist/js/contact_script.min.js"
-    training: "dist/js/formation_script.min.js"
+    contact: "dist/js/script.contact.min.js"
+    training: "dist/js/script.training.min.js"

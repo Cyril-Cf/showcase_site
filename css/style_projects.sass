@@ -24,19 +24,28 @@ body
                     transition: box-shadow 0.5s
                     &:hover
                         box-shadow: 5px 5px 5px 7px rgba(0,0,0,0.1)
-                    @media (max-width: 768px)
+                    @include media-screen-between($extra-small-screen-min, $tablet-max)
                         margin: 25px 50px
+                        height: auto
                     img
                         width: 450px
                         height: 350px
                         object-fit: cover
+                        @include media-screen-between($extra-small-screen-min, $tablet-max)
+                            width: 300px
+                            height: 200px
                     .content
                         padding: 15px
                         h2
                             font-size: 20px
                             text-transform: uppercase
+                            @include media-screen-between($extra-small-screen-min, $tablet-max)
+                                text-align: center
                         p
                             text-align: justify
+                            @include media-screen-between($extra-small-screen-min, $tablet-max)
+                                text-align: center
+                                margin: 10px 0
                         .precisions
                             display: flex
                             align-items: center
@@ -45,10 +54,12 @@ body
                                 font-size: 15px
                                 text-transform: uppercase
                                 color: $accent-color
+                                width: calc(100%/3)
                             ul
                                 margin-left: 5px
                                 display: flex
                                 align-items: center
+                                width: calc((100%/3)*2)
                                 li
                                     padding: 0 5px
                                     &:not(:last-child)
