@@ -1,6 +1,6 @@
 pug html_templates/pug/*.pug -o html_templates --pretty
 static-i18n -o . --file-format yaml --allow-html -l fr -i en -i fr html_templates
-html-minifier --input-dir . --output-dir . --file-ext html --collapse-whitespace --minify-css true --minify-js true
+html-minifier --input-dir html_templates --output-dir . --file-ext html --collapse-whitespace --minify-css true --minify-js true
 mkdir -p dist/js
 for f in js/*.js; do
     if [[ "$f" != *".min.js" ]]; then
