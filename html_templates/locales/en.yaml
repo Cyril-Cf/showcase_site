@@ -3,13 +3,13 @@ head:
   description: "Freelance and Rust trainer in Lyon, FRANCE. Expert in Rust development for innovative projects."
   keywords: "Rust Freelance, Rust Trainer, Lyon, Rust Developer, Rust Expert"
   links:
-    logo: "img/logo.ico"
+    logo: "../../img/logo.ico"
     css:
-      index: "css/style_index.min.css"
-      contact: "css/style_contact.min.css"
-      freelance: "css/style_freelance.min.css"
-      project: "css/style_projects.min.css"
-      training: "css/style_training.min.css"
+      index: "dist/css/style_index.min.css"
+      contact: "dist/css/style_contact.min.css"
+      freelance: "dist/css/style_freelance.min.css"
+      project: "dist/css/style_projects.min.css"
+      training: "dist/css/style_training.min.css"
   locale: 'i18next.use(i18nextBrowserLanguageDetector).use(i18nextHttpBackend).init({debug:!0,fallbackLng:"fr-FR",lng:["fr-FR","en-US"],backend:{loadPath:"locales/{{lng}}/{{ns}}.json"}});'
 body:
   header:
@@ -29,11 +29,11 @@ body:
         "<strong>Trainer</strong> in classic web fullstack technologies
         (HTML, CSS, Javascript, PHP, Docker, GIT) and Rust programming."
     links:
-      logo: "img/logo.avif"
-      burger: "img/burger.svg"
+      logo: "../../img/logo.avif"
+      burger: "../../img/burger.svg"
       flag:
-        french: "img/french_flag.avif"
-        eng: "img/us_flag.webp"
+        french: "../../img/french_flag.avif"
+        eng: "../../img/us_flag.webp"
     lang:
       french: "French"
       english: "English"
@@ -46,26 +46,26 @@ body:
           development. By choosing Rust, you benefit from:"
         select_panel:
           default:
-            link: "img/security.avif"
+            link: "../../img/security.avif"
             h3: "Memory Safety"
             text: "Rust elegantly eliminates common memory management errors, such as null pointers and buffer overflows. Its ownership and memory management system ensures safety without sacrificing performance, thus providing protection against potential security vulnerabilities."
           security:
-            link: "img/code.svg"
+            link: "../../img/code.svg"
             h3: "Memory Safety"
           performance:
-            link: "img/battery-full.svg"
+            link: "../../img/battery-full.svg"
             h3: "Exceptional Performance"
           concurrency:
-            link: "img/vr-cardboard.svg"
+            link: "../../img/vr-cardboard.svg"
             h3: "Painless Concurrency"
           abstraction:
-            link: "img/microscope.svg"
+            link: "../../img/microscope.svg"
             h3: "Abstraction Without Performance Penalty"
           ecosystem:
-            link: "img/wifi.svg"
+            link: "../../img/wifi.svg"
             h3: "Active Ecosystem"
           use_case:
-            link: "img/wrench.svg"
+            link: "../../img/wrench.svg"
             h3: "Multiple Use Cases"
       use_case:
         h2: "Use Cases"
@@ -98,7 +98,7 @@ body:
       h1: "Want to exchange together?"
       me:
         h2: "Feel free to contact me to start the conversation!"
-        img: "img/cuddlyferris.svg"
+        img: "../../img/cuddlyferris.svg"
       form:
         h2: "Contact Form"
         name: "Your Name"
@@ -156,7 +156,7 @@ body:
         h2: "About me"
         skills:
           h3: "My skills"
-          first: "Web development: <strong>RUST</strong> (Actix Web, Juniper, SeaORM, Diesel), <strong>PHP</strong> (Symfony, Laravel, Eloquent, Doctrine), <strong>Javascript</strong> (NestJS, Vue.JS, Quasar), HTML, CSS, SCSS/SASS"
+          first: "Web development: <strong>RUST</strong> (Actix Web, Juniper, SeaORM, Diesel), <strong>PHP</strong> (Symfony, Laravel, Eloquent, Doctrine), <strong>Javascript</strong> (NestJS, Vue.JS, Quasar), HTML, CSS, Sdist/css/SASS"
           second: "API development: <strong>REST</strong>, <strong>GraphQL</strong>"
           third: "Database: <strong>MySQL</strong>, <strong>PostgreSQL</strong>"
           fourth: "Containerization and version control: <strong>Git</strong> (Gitlab, Github), <strong>Docker</strong>"
@@ -284,6 +284,6 @@ body:
     text: "&copy; 2024 - Freelance and Trainer Rust/Web Lyon/France"
 links:
   js:
-    index: "js/script.js"
-    contact: "js/contact_script.prod.js"
-    training: "js/formation_script.prod.js"
+    index: "dist/js/script.min.js"
+    contact: "dist/js/contact_script.min.js"
+    training: "dist/js/formation_script.min.js"
