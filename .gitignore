@@ -1,3 +1,4 @@
 css/*.css
 js/*.dev.js
 js/*.prod.js
+html_templates/*.html
