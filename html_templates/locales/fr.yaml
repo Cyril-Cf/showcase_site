@@ -201,6 +201,51 @@ body:
         second: "<strong>Agile</strong>, je peux aussi bien travailler en
           télétravail total ou en présentiel les préférences de votre
           organisation."
+    project:
+      h1: "Exemples de projets"
+      projects:
+        first:
+          h2: "Rusty Dungeon"
+          text: "Projet exploratoire d'aventure Rogue-like en ligne de commande
+            pour m'entrainer à l'usage de la librairie Ratatui
+            (Terminal-based Interface)"
+          precisions:
+            techno:
+              h3: "Technos :"
+              first: "Rust"
+              second: "Ratatui"
+              third: "Docker"
+            link:
+              h3: "liens :"
+              text: "Lien repository github"
+        second:
+          h2: "API minimale - RUST"
+          text: "Boilerplate d'API minimale utilisant Actix-web, Sea-ORM, les
+            entités, services, controllers, et la logique de migrations"
+          precisions:
+            techno:
+              h3: "Technos :"
+              first: "Rust"
+              second: "Actix web"
+              third: "Sea-ORM"
+            link:
+              h3: "liens :"
+              text: "Lien repository github"
+        third:
+          h2: "Eyetracking script - Python"
+          text: "Ce script a été créé dans le but de mesurer l'orientation du
+            regard au moyen d'OpenSesame. Il simule un environnement email
+            pour contrôler comment se comporte un utilisateur face à des
+            situations de tests"
+          precisions:
+            techno:
+              h3: "Technos :"
+              first: "Python"
+              second: "OpenSesame"
+              third: "Eyetracking"
+            link:
+              h3: "liens :"
+              text: "Lien repository github"
   footer:
     text: "&copy; 2024 - Freelance et Formateur Rust/Web Lyon/France"
 links:

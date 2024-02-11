@@ -170,6 +170,50 @@ body:
         h2: "My location"
         first: "I am based in <strong>Lyon</strong>. My geographical area of intervention includes the AURA region, as well as the entire France depending on the cases (full or partial telecommuting, occasional travel)"
         second: "<strong>Agile</strong>, I can work equally well in full telecommuting or in-person according to your organization's preferences."
+    project:
+      h1: "Examples of projects"
+      projects:
+        first:
+          h2: "Rusty Dungeon"
+          text: "Exploratory project of a Rogue-like adventure in command line
+            to train myself in the use of the Ratatui library
+            (Terminal-based Interface)"
+          precisions:
+            techno:
+              h3: "Technologies:"
+              first: "Rust"
+              second: "Ratatui"
+              third: "Docker"
+            link:
+              h3: "Links:"
+              text: "Github repository link"
+        second:
+          h2: "Minimal API - RUST"
+          text: "Minimal API boilerplate using Actix-web, Sea-ORM, entities,
+            services, controllers, and migration logic"
+          precisions:
+            techno:
+              h3: "Technologies:"
+              first: "Rust"
+              second: "Actix web"
+              third: "Sea-ORM"
+            link:
+              h3: "Links:"
+              text: "Github repository link"
+        third:
+          h2: "Eyetracking script - Python"
+          text: "This script was created to measure gaze orientation
+            using OpenSesame. It simulates an email environment
+            to control how a user behaves in test situations"
+          precisions:
+            techno:
+              h3: "Technologies:"
+              first: "Python"
+              second: "OpenSesame"
+              third: "Eyetracking"
+            link:
+              h3: "Links:"
+              text: "Github repository link"
   footer:
     text: "&copy; 2024 - Freelance and Trainer Rust/Web Lyon/France"
 links:

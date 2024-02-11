@@ -1,6 +1,58 @@
 extends templates/layout
 
 block css_link
-    link(rel="stylesheet" data-attr-t="" data-attr-t-interpolate="" href-t="{{head.links.css}}")
+    link(rel="stylesheet" data-attr-t="" data-attr-t-interpolate="" href-t="{{head.links.css.project}}")
 
 block main
+    h1(data-t="") body.main.project.h1
+    div.divider
+    section#projects
+        ul
+            li.card
+                img(src="img/rusty_dungeon.webp" alt="Rusty dungeon")
+                div.content
+                    h2(data-t="") body.main.project.projects.first.h2
+                    p(data-t="") body.main.project.projects.first.text
+                    div.precisions
+                        h3(data-t="") body.main.project.projects.first.precisions.techno.h3
+                        ul
+                            li(data-t="") body.main.project.projects.first.precisions.techno.first
+                            li(data-t="") body.main.project.projects.first.precisions.techno.second
+                            li(data-t="") body.main.project.projects.first.precisions.techno.third
+                    div.precisions
+                        h3(data-t="") body.main.project.projects.first.precisions.link.h3
+                        ul
+                            li
+                                a(href="https://github.com/Cyril-Cf/rusty_adventures" target="_blank" data-t="") body.main.project.projects.first.precisions.link.text
+            li.card
+                img(src="img/light.avif" alt="API REST Rust")
+                div.content
+                    h2(data-t="") body.main.project.projects.second.h2
+                    p(data-t="") body.main.project.projects.second.text
+                    div.precisions
+                        h3(data-t="") body.main.project.projects.second.precisions.techno.h3
+                        ul
+                            li(data-t="") body.main.project.projects.second.precisions.techno.first
+                            li(data-t="") body.main.project.projects.second.precisions.techno.second
+                            li(data-t="") body.main.project.projects.second.precisions.techno.third
+                    div.precisions
+                        h3(data-t="") body.main.project.projects.second.precisions.link.h3
+                        ul
+                            li
+                                a(href="https://github.com/Cyril-Cf/rusty_adventures" target="_blank" data-t="") body.main.project.projects.second.precisions.link.text
+            li.card
+                img(src="img/heatmap.webp" alt="Eyetracking Python")
+                div.content
+                    h2(data-t="") body.main.project.projects.third.h2
+                    p(data-t="") body.main.project.projects.third.text
+                    div.precisions
+                        h3(data-t="") body.main.project.projects.third.precisions.techno.h3
+                        ul
+                            li(data-t="") body.main.project.projects.third.precisions.techno.first
+                            li(data-t="") body.main.project.projects.third.precisions.techno.second
+                            li(data-t="") body.main.project.projects.third.precisions.techno.third
+                    div.precisions
+                        h3(data-t="") body.main.project.projects.third.precisions.link.h3
+                        ul
+                            li
+                                a(href="https://github.com/Cyril-Cf/rusty_adventures" target="_blank" data-t="") body.main.project.projects.third.precisions.link.text
