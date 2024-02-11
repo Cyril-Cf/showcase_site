@@ -22,7 +22,6 @@
     <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.2.1/i18nextHttpBackend.min.js"></script>
     <script>
       i18next.use(i18nextHttpBackend).init({
-      debug: !0,
       fallbackLng: ["fr-FR", "en-US"],
       lng: ["fr-FR", "en-US"],
       backend: { loadPath: "locales/{{lng}}/{{ns}}.json" },
@@ -64,8 +63,8 @@
           <form name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xvovylnw" method="post" id="contact-form">
             <div class="form-group">
               <div class="form-item">
-                <label for="nom" data-t="">body.main.contact.form.name</label>
-                <input type="text" id="nom" name="nom" required>
+                <label for="name" data-t="">body.main.contact.form.name</label>
+                <input type="text" id="name" name="name" required>
               </div>
               <div class="form-item">
                 <label for="email" data-t="">body.main.contact.form.email</label>
@@ -85,7 +84,9 @@
     </main>
     <footer>
       <p data-t="">body.footer.text</p>
-      <div class="message" id="alert"></div>
+      <div id="messageContainer">
+        <div class="message" id="alert"></div>
+      </div>
     </footer>
     <script data-attr-t="" data-attr-t-interpolate="" src-t="{{links.js.contact}}"></script>
   </body>

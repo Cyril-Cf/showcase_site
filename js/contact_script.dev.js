@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   var form = document.getElementById("contact-form");
-  var nameInput = document.getElementById("nom");
+  var nameInput = document.getElementById("name");
   var emailInput = document.getElementById("email");
   var messageInput = document.getElementById("message");
   form.addEventListener("submit", function (event) {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     messageInput.value = "";
     var messageContainer = document.getElementById("messageContainer");
     var alertElement = document.getElementById("alert");
-    alertElement.textContent = "Bien reçu, je reviens vers vous dans les meilleurs délais !";
+    alertElement.textContent = window.i18next.t("contact.message");
     messageContainer.style.opacity = 1;
     setTimeout(function () {
       messageContainer.style.opacity = 0;

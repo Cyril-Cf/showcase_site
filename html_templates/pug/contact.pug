@@ -15,8 +15,8 @@ block main
             form(name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xvovylnw" method="post" id="contact-form")
                 div.form-group
                     div.form-item
-                        label(for="nom" data-t="") body.main.contact.form.name
-                        input(type="text" id="nom" name="nom", required)
+                        label(for="name" data-t="") body.main.contact.form.name
+                        input(type="text" id="name" name="name", required)
                     div.form-item
                         label(for="email" data-t="") body.main.contact.form.email
                         input(type="email" id="email" name="email", required)
@@ -27,7 +27,8 @@ block main
                     input(type="submit" data-attr-t="" data-attr-t-interpolate="" value-t="{{body.main.contact.form.submit}}" id="submit")
 
 block after-footer
-    div.message#alert
+    div#messageContainer
+        div.message#alert
 
 block js-script
     script(data-attr-t="" data-attr-t-interpolate="" src-t="{{links.js.contact}}")

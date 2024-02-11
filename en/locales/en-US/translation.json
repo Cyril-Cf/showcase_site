@@ -62,5 +62,8 @@
         "text": "<div><p>Rust excels in system programming, offering a secure alternative to traditional languages. It has made its way into the Linux Kernel.</p><a href=\"#\">Learn more</a></div>"
       }
     }
+  },
+  "contact": {
+    "message": "Well received, I will get back to you as soon as possible!"
   }
 }
