@@ -12,5 +12,5 @@
 
 ## Launching and testing
 
-- To execute all tasks in on go, just launch: docker compose up
+- To execute all tasks in one go, just launch: docker compose up
 - To test your website and avoid CORS problems: docker compose -f docker-compose.dev.yaml up
